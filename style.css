@@ -1,0 +1,47 @@
+#background{
+	background: url(background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: auto;
+	height: 500px;
+
+
+}
+#road{
+	background: url(road.jpg);
+
+}
+#img{
+	width: 150px;
+
+}
+#dbtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.btn{
+	background-color: yellowgreen ;
+	width: 130px;
+	font-size: 30px;
+	margin: auto;
+	text-align: center;
+	margin-top: 30px;
+	border: 1px solid red;
+	border-radius: 30px;
+}
+
+.btn:active{
+	background-color: darkorange;
+}
+
+.btn:disabled{
+	background: red;
+}
+
+#speedx2{
+	font-size: 28px;
+
+}
