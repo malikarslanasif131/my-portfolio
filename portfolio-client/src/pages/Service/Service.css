@@ -1,0 +1,47 @@
+.icon-style {
+    /* width: 150px; */
+    transition: color 0.3s ease-in-out;
+}
+
+.icon-style:hover {
+    color: #f25476;
+    /* Specify the color you want on hover */
+}
+
+.service-box {
+    text-align: center;
+    
+}
+
+/* .service-box:hover {
+    background-color: #f0f0f0;
+
+} */
+
+.icon_back_style{
+    text-align: center;
+    margin: auto !important;
+    width: 200px;
+    height: 200px;
+    transition: color 0.3s ease-in-out;
+    background-color: aliceblue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.icon_back_style:hover{
+    margin: auto !important;
+    width: 200px;
+    height: 200px;
+    transition: color 0.3s ease-in-out;
+    background-color: aliceblue;
+    color: #f25476;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
