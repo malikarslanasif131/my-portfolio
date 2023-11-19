@@ -18,7 +18,10 @@ const Testimonials = () => {
             </h1>
           </div>
           <div className="col-md-4 ">
-            <div className="card text-center  py-3 " style={{ width: "24rem" }}>
+            <div
+              className="card text-center  py-3 "
+              style={{ width: "24rem", minHeight: "500px" }}
+            >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
                 alt="avatar"
@@ -26,13 +29,13 @@ const Testimonials = () => {
                 style={{ width: "150px" }}
               />
               <div className="card-body">
-                <h5 className="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
+                <h5 className="mb-3">Adnan Asif</h5>
+                <p>Web Developer</p>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  et deleniti nesciunt sint eligendi reprehenderit reiciendis,
-                  quibusdam illo, beatae quia fugit consequatur laudantium velit
-                  magnam error. Consectetur distinctio fugit doloremque.
+                  We had given a project to Arslan Asif for frontend development
+                  and he has done an excellent job within a short frame of time.
+                  Work submitted was pixel perfect. I am a very fussy client and
+                  they have handled every very professionally.
                 </p>
                 <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
                   <li>
@@ -55,7 +58,10 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="col-md-4 ">
-            <div className="card text-center  py-3 " style={{ width: "24rem" }}>
+            <div
+              className="card text-center  py-3 "
+              style={{ width: "24rem", minHeight: "500px" }}
+            >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                 alt="avatar"
@@ -63,13 +69,12 @@ const Testimonials = () => {
                 style={{ width: "150px" }}
               />
               <div className="card-body">
-                <h5 className="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
+                <h5 className="mb-3">Ahssam Saeed</h5>
+                <p>Mern Stack Developer</p>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  et deleniti nesciunt sint eligendi reprehenderit reiciendis,
-                  quibusdam illo, beatae quia fugit consequatur laudantium velit
-                  magnam error. Consectetur distinctio fugit doloremque.
+                  I am having the privilege of working closely with Brijeshkumar
+                  in NEWERO Techspot, and I can confidently say that he is an
+                  exceptional front end developer also Back End.
                 </p>
                 <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
                   <li>
@@ -92,7 +97,10 @@ const Testimonials = () => {
             </div>
           </div>{" "}
           <div className="col-md-4 ">
-            <div className="card text-center  py-3 " style={{ width: "24rem" }}>
+            <div
+              className="card text-center  py-3 "
+              style={{ width: "24rem", minHeight: "500px" }}
+            >
               <img
                 src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
                 alt="avatar"
