@@ -31,7 +31,7 @@ const Project = () => {
             </h1>
           </div>
           <div className="col-md-4 ">
-            <span className="top_badge__style goldenrod_badge">
+            <span className="top_badge__style badge__style_color">
               Full Stack{" "}
             </span>
             <div className="card card__style " style={{ width: "24rem" }}>
@@ -73,7 +73,9 @@ const Project = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <span className="top_badge__style teal_badge">MERN Stack</span>
+            <span className="top_badge__style badge__style_color">
+              MERN Stack
+            </span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
                 src={require("../../images/ecommerce.jpg")}
@@ -112,7 +114,9 @@ const Project = () => {
             </div>
           </div>
           <div className="col-md-4 ">
-            <span className="top_badge__style crimson_badge">CRUD MERN</span>
+            <span className="top_badge__style badge__style_color">
+              CRUD MERN
+            </span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
                 src={require("../../images/portfolio.png")}
@@ -158,7 +162,7 @@ const Project = () => {
             </div>
           </div>
           {/* ==================three card end ================ */}
-          <div className="col-md-4">
+          {/* <div className="col-md-4">
             <span className="top_badge__style teal_badge">MERN Stack</span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
@@ -275,7 +279,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          {/* ==================three card end ================ */}
+          ==================three card end ================ */}
         </div>
       </div>
       <Modal

@@ -1,9 +1,33 @@
 import React from "react";
 import { GiStack } from "react-icons/gi";
-// import reactImage from "../../images/react.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  Navigation,
+  Autoplay,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+} from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import "swiper/css/autoplay";
+import "swiper/css/bundle";
 import "./Skills.css";
 
 const Skills = () => {
+  const stackData = [
+    { title: "React Js", image: require("../../images/react.png") },
+    { title: "Node Js", image: require("../../images/node.png") },
+    { title: "Mongo DB", image: require("../../images/mongo.png") },
+    { title: "Express Js", image: require("../../images/express.png") },
+    { title: "PhP", image: require("../../images/php.png") },
+    { title: "My SQL", image: require("../../images/mysql.png") },
+    { title: "Python", image: require("../../images/python.png") },
+    { title: "Drupal", image: require("../../images/drupal.png") },
+  ];
+
   return (
     <>
       <div id="skills_id" className="container">
@@ -18,183 +42,56 @@ const Skills = () => {
             <div className="stack__list">
               <div className="container p-3">
                 <div className="row">
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/react.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>React Js</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/node.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>Node Js</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      // style={{ width: "16rem" }}
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/mongo.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>Mongo DB</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/express.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>Express Js</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/php.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>PhP</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/mysql.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>My SQL</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/python.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>Python</h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
-                  {/* ===============Start======================== */}
-                  <div className="col-md-3 pt-3 mt-2">
-                    <div
-                      className="card card_style_stack"
-                      style={{ height: "140px", overflow: "hidden" }}
-                    >
-                      <img
-                        src={require("../../images/drupal.png")}
-                        className="card-img-top mt-2"
-                        alt="..."
-                        style={{
-                          objectFit: "scale-down",
-                          width: "50%",
-                          height: "50%",
-                        }}
-                      />
-                      <div className="card-body pb-0">
-                        <h5>Drupal </h5>
-                      </div>
-                    </div>
-                  </div>
-                  {/* ===============End======================== */}
+                  <Swiper
+                    cssMode={true}
+                    pagination={{
+                      clickable: true,
+                    }}
+                    // navigation={true}
+                    mousewheel={true}
+                    keyboard={true}
+                    modules={[
+                      Navigation,
+                      Autoplay,
+                      Pagination,
+                      Mousewheel,
+                      Keyboard,
+                    ]}
+                    spaceBetween={60}
+                    slidesPerView={4}
+                    // navigation
+                    autoplay={{
+                      delay: 1500,
+                      disableOnInteraction: false,
+                    }}
+                    loop={true}
+                    // scrollbar={{ draggable: true }}
+                    // onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log("slide change")}
+                  >
+                    {stackData.map((stackItem, index) => (
+                      <SwiperSlide key={index}>
+                        <div
+                          className="card card_style_stack"
+                          style={{ height: "140px", overflow: "hidden" }}
+                        >
+                          <img
+                            src={stackItem.image}
+                            className="card-img-top mt-2"
+                            alt={stackItem.title}
+                            style={{
+                              objectFit: "scale-down",
+                              width: "50%",
+                              height: "50%",
+                            }}
+                          />
+                          <div className="card-body pb-0">
+                            <h5>{stackItem.title}</h5>
+                          </div>
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </div>
               </div>
             </div>

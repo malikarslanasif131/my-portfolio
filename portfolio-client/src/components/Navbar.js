@@ -9,10 +9,12 @@ const Navbar = () => {
   const sections = [
     { name: "Home", id: "home_main" },
     { name: "About", id: "about_me" },
+    { name: "Service", id: "service_id" },
     { name: "Skills", id: "skills_id" },
     { name: "Education", id: "education_id" },
     { name: "Projects", id: "project_id" },
     { name: "Experience", id: "experience_id" },
+    { name: "Testimonials", id: "testimonial_id" },
     { name: "Contact Me", id: "contact_id" },
   ];
 
@@ -64,6 +66,12 @@ const Navbar = () => {
     <>
       <nav className="navbar navbar-expand-lg navbar-light sticky-top nav__style">
         <div className="container-fluid">
+          <a
+            className="navbar-brand custom_nav_brand px-5 text-light "
+            href="/"
+          >
+            &lt; Malik Arslan Asif /&gt;
+          </a>
           <button
             className="navbar-toggler"
             type="button"

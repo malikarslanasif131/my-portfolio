@@ -63,7 +63,7 @@ const Contact = () => {
         <div className="row my-5">
           <div className="mt-5 mb-3">
             <h1 className="display-5 text-center ">
-              Contact Us{" "}
+              Contact Me!
               <span className="align-top p-1 m-1 icon_about">
                 {" "}
                 <BiSolidContact />

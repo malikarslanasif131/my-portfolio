@@ -4,7 +4,7 @@ import logo from "../../images/my-profile.jpg";
 import resumefile from "../../images/Arslan_Asif_CV.pdf";
 import Typewriter from "typewriter-effect";
 import { useWindupString } from "windups";
-import { BsWhatsapp } from "react-icons/bs";
+import { IoLogoWhatsapp } from "react-icons/io";
 const Home = () => {
   const [text] = useWindupString("Malik Arslan Asif");
 
@@ -76,9 +76,9 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
-                className="btn btn-lg mx-5"
+                className="btn btn-lg mx-3 px-3 pb-2"
               >
-                <BsWhatsapp size={32} />
+                <IoLogoWhatsapp size={32} className="custom_bg_color_wp" />
               </a>
             </div>
           </div>

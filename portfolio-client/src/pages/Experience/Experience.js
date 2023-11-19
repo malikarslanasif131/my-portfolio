@@ -10,6 +10,7 @@ import { SiExpertsexchange } from "react-icons/si";
 import { BiSolidSchool } from "react-icons/bi";
 import { FaDrupal } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
+import { MdStackedLineChart } from "react-icons/md";
 
 const Experience = () => {
   return (
@@ -67,6 +68,30 @@ const Experience = () => {
                     ExpressJS (Node.js), ReactJS, and also work on Laravel(PHP)
                     during internship. Collaborated with team members to build
                     scalable and responsive web solutions.
+                  </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                  className="vertical-timeline-element--work"
+                  date="January-2022 - Present"
+                  iconStyle={{ background: "#EA738D", color: "#fff" }}
+                  icon={<MdStackedLineChart />}
+                  iconClassName={"change__icon__style"}
+                >
+                  <h4 className="vertical-timeline-element-title">
+                    Self Employment
+                  </h4>
+                  <h4 className="vertical-timeline-element-subtitle">
+                    Full Stack Developer
+                  </h4>
+                  <p>
+                    {" "}
+                    I am a passionate full stack developer with expertise in
+                    PHP, React.js, JavaScript, and the MERN stack. Through
+                    self-employment, I have successfully completed various
+                    personal projects, showcasing my skills in both front-end
+                    and back-end development. My commitment to staying updated
+                    with emerging technologies ensures that I deliver innovative
+                    and high-quality solutions.
                   </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

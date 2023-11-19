@@ -8,19 +8,21 @@ function App() {
     <>
       {/* <CustomCursor /> */}
       <AnimatedCursor
-        innerSize={10}
-        outerSize={25}
+        innerSize={7}
+        outerSize={30}
         innerScale={1}
         outerScale={1}
         outerAlpha={0}
-        hasBlendMode={true}
+        // hasBlendMode={true}
         innerStyle={{
           backgroundColor: "#3979ef",
           zIndex: "9999",
+          transition: "none",
         }}
         outerStyle={{
           border: "3px solid #3979ef",
           zIndex: "9999",
+          transition: "none",
         }}
       />
       <Routes>

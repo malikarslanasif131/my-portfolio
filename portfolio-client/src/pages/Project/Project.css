@@ -1,5 +1,10 @@
 .card__style {
-    background-color: var(--secondary-color)b7;
+    background-color: rgb(226, 240, 253);
+    backdrop-filter: blur(10px);
+
+}
+.card__style:hover {
+    background-color: rgb(186, 218, 248);
     backdrop-filter: blur(10px);
 
 }
@@ -76,23 +81,23 @@ button:active {
 
 .top_badge__style{
         display: inline-block;
-        padding: 0.35em 0.65em;
-        font-size: 1em;
-        font-weight: 700;
-        line-height: 1;
-        color: #fff;
-        text-align: center;
-        white-space: nowrap;
-        vertical-align: baseline;
-        border-radius: 0.25rem;
-        margin-right: 0.25rem !important;
-        margin-left: 0.25rem !important;
-        /* background-color: var(--primary-color) !important; */
-        border-radius: 50rem !important;
-        position: relative;
-        top: 18px;
-        left: -20px;
-        z-index: 100;
+            padding: 0.35em 0.65em;
+            font-size: 1.1em;
+            font-weight: 500;
+            line-height: 1.5;
+            color: #fff;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+            border-radius: 0.25rem;
+            margin-right: 0.25rem !important;
+            margin-left: 0.25rem !important;
+            /* background-color: var(--primary-color) !important; */
+            border-radius: 1rem !important;
+            position: relative;
+            top: 33px;
+            left: -17px;
+            z-index: 100;
 }
 .pink_badge{
     background-color: var(--primary-color) !important;
@@ -121,4 +126,9 @@ button:active {
     .modal-xl {
         max-width: 992px !important;
     }
+}
+
+
+.badge__style_color{
+        background: linear-gradient(to bottom right, #5B7FFF, #33CCFC) !important;
 }

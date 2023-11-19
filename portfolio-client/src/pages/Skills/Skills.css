@@ -1,10 +1,19 @@
 .card_style_stack{
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    background-color: aliceblue;
  
-    color: #fff;
+    color: #777;
 }
 .card_style_stack:hover{
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    /* background : linear-gradient(
+to bottom right,
+#5B7FFF, #33CCFC
+    ); */
+background: linear-gradient(to bottom right,
+            #FF9E68, #FF68DE);
+
+
     color: #fff;
 }
 
@@ -22,4 +31,11 @@
     color: var(--primary-color);
     font-weight: 400;
     border-bottom: 1px solid var(--primary-color);
+}
+
+.swiper-pagination-horizontal{
+    /* bottom: -10px !important; */
+}
+.swiper-wrapper{
+    height: 190px !important;
 }

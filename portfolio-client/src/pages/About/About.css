@@ -12,8 +12,8 @@
             color: #ffffffd2 !important;
             font-size: 20px;
             border-radius: 5px;
-            word-spacing: 2x;
-            letter-spacing: 1px;
+            word-spacing: 1x;
+            /* letter-spacing: 1px; */
 }
 /* 
 .about__card::before {
@@ -42,10 +42,31 @@
 } */
 
 .about_details{
-    text-indent: 50px;
+    /* text-indent: 50px; */
 }
 .icon_about{
     font-size: 40px;
     padding: 0;
     margin: 0;
+}
+
+.about__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+}
+.custom_width_150{
+    width: 300px !important;
+    border-radius: 10px !important;
+
+}
+
+.custom_width_150:hover {
+    /* background-color: #EA738D !important; */
+    background: linear-gradient(to bottom right,
+                #FF9E68, #FF68DE);
+    color: #fffffff1 !important;
 }

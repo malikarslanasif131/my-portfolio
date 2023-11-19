@@ -9,6 +9,8 @@ import Seprator from "../../components/Seprator";
 import Experience from "../Experience/Experience";
 import Footer from "../../components/Footer";
 import Project from "../Project/Project";
+import Testimonials from "../Testimonials/Testimonials";
+
 import Contact from "../Contact/Contact";
 import Service from "../Service/Service";
 
@@ -22,7 +24,7 @@ const Layout = () => {
 
   return (
     <>
-      <div style={rootStyle} className="layout_main">
+      <div style={rootStyle} className="layout_main mb-0 pb-0">
         <Navbar />
         <Home />
         <Seprator />
@@ -37,6 +39,10 @@ const Layout = () => {
         <Seprator />
         <Seprator />
         <Experience />
+        <Seprator />
+        <Testimonials />
+        <Seprator />
+
         <Contact />
         {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="malik-arslan-asif-99b4b2256" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/malik-arslan-asif-99b4b2256?trk=profile-badge">Malik Arslan asif</a></div> */}
         {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="malik-arslan-asif-99b4b2256" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/malik-arslan-asif-99b4b2256?trk=profile-badge">Malik Arslan asif</a></div> */}

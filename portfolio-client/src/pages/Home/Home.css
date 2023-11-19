@@ -31,3 +31,8 @@ color: #fff;
         -moz-box-shadow: 20px 6px 32px 11px #dddddd;
         box-shadow: 20px 6px 32px 11px #dddddd;
 }
+.custom_bg_color_wp{
+    /* color: linear-gradient(to bottom right,
+                #403F44, #1E1B32); */
+    color : #0dc143;
+}

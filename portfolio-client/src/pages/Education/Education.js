@@ -38,7 +38,7 @@ const Education = () => {
                   iconClassName={"change__icon__style"}
                 >
                   <h3 className="vertical-timeline-element-title">
-                    Bsc Computer Science
+                    Bachelor of Computer Science
                   </h3>
                   <h4 className="vertical-timeline-element-subtitle">
                     University Of Gujrat

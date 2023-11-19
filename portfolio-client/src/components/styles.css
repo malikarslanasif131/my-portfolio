@@ -10,22 +10,32 @@
     color: var(--primary-color);
 }
 .letter__spacing{
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     margin-bottom: 0px !important;
     padding-bottom: 0px !important;
 }
+.custom_nav_brand{
+    font-size: 24px;
+    font-weight: 800 !important;
+    /* letter-spacing: 3px; */
+    /* color : #ffffff !important; */
+   
+   
+}
+
 .text__pink{
     color: #fff !important;
-    font-weight: 600;
-    font-size: 1.1rem;
-    border-bottom: 1px solid var(--secondary-color) !important;
+    /* font-weight: 600; */
+    /* font-size: 1.1rem; */
+    /* border-bottom: 1px solid var(--secondary-color) !important; */
     /* border-bottom: 1px solid var(--secondary-color) !important; */
     /* background-color: #EA738D; */
     /* border-radius: 30px; */
+    border-top: 4px solid var(--secondary-color)  !important;
 }
 .text__pink:hover {
     color: var(--primary-color) !important;
-    font-weight: 600;
+    /* font-weight: 600; */
     /* font-size: 1.08rem; */
     /* border: 1px solid; */
     /* border-top: 5px solid var(--primary-color) !important; */
@@ -65,10 +75,30 @@
     color: #fff;
 }
 .bgf__color__white {
-    background-color: #e6e5e5d0;
-    margin-bottom: 0rem !important;
+    /* background-color: #e6e5e5d0; */
+    /* margin-bottom: 0rem !important; */
+    background: linear-gradient(
+to bottom right,
+#403F44, #1E1B32
+    );
 }
+.li_circle{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: #fff !important;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
 
+}
+.li_circle:hover { 
+    color: #fff !important;
+    /* background-color: var(--primary-color) !important; */
+
+    background: linear-gradient(to bottom right,
+                #FF6868, #FF68DE);
+}
 .border_pink{
     /* /* border: 3px solid #fff; * */
 
@@ -92,3 +122,8 @@
 
 
 
+.custom_hover:hover{
+    background: linear-gradient(to bottom right,
+                #403F44, #1E1B32);
+    color : #EA738D !important;
+}
