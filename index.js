@@ -14,7 +14,7 @@ const __dirname = dirname(__filename);
 const app = express();
 
 // Serve static files from the 'uploads' directory
-app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
+// app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
 //import route
 import contactRoutes from "./routes/contactRoutes.js";
 import infoRoutes from "./routes/infoRoutes.js";
@@ -39,7 +39,9 @@ app.get("/api/test", (req, res) => {
   res.send("Hello from the Express server and test middleware!");
 });
 
-app.use("*", (req, res) => {
+app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
+
+app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
 });
 
