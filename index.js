@@ -31,15 +31,16 @@ app.use(
 app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
 // Define a route for the server
 
-app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
-});
-
 app.use("/api/contact", contactRoutes);
 app.use("/api/saveClientInfo", infoRoutes);
 
 app.get("/api/test", (req, res) => {
   res.send("Hello from the Express server and test middleware!");
+});
+
+// Fallback to serving React app for all other routes
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
 });
 
 const port = process.env.PORT || 8080;
