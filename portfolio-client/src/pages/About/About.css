@@ -42,7 +42,12 @@
 } */
 
 .about_details{
-    /* text-indent: 50px; */
+    text-indent: 30px;
+    text-align: justify;
+    /* text-justify: inter-word; */
+    font-size: 18px;    
+    letter-spacing: 1px;
+
 }
 .icon_about{
     font-size: 40px;
@@ -55,7 +60,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 70px;
 
 }
 .custom_width_150{
@@ -67,6 +72,7 @@
 .custom_width_150:hover {
     /* background-color: #EA738D !important; */
     background: linear-gradient(to bottom right,
-                #FF9E68, #FF68DE);
+                #5B7FFF, #33CCFC);
+                /* #FF9E68, #FF68DE); */
     color: #fffffff1 !important;
 }

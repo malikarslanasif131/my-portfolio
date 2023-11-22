@@ -65,8 +65,8 @@ button:active {
 .badge__style{
         display: inline-block;
         padding: 0.35em 0.65em;
-        font-size: .75em;
-        font-weight: 700;
+        font-size: .7em;
+        font-weight: 400;
         line-height: 1;
         color: #fff;
         text-align: center;
@@ -89,11 +89,11 @@ button:active {
             text-align: center;
             white-space: nowrap;
             vertical-align: baseline;
-            border-radius: 0.25rem;
+            border-radius: 0.15rem;
             margin-right: 0.25rem !important;
             margin-left: 0.25rem !important;
             /* background-color: var(--primary-color) !important; */
-            border-radius: 1rem !important;
+            border-radius: 0.3rem !important;
             position: relative;
             top: 33px;
             left: -17px;
@@ -130,5 +130,10 @@ button:active {
 
 
 .badge__style_color{
-        background: linear-gradient(to bottom right, #5B7FFF, #33CCFC) !important;
+        background: linear-gradient(to bottom right, #5B7FFF, #e71d36) !important;
+}
+
+.badge__color{
+        background: linear-gradient(to bottom right, #403F44, #1E1B32) !important;
+        padding: 7px 15px !important;
 }

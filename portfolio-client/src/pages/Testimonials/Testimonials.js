@@ -23,19 +23,23 @@ const Testimonials = () => {
               style={{ width: "24rem", minHeight: "500px" }}
             >
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                src={require("../../images/testi1.jpg")}
                 alt="avatar"
                 className="rounded-circle mx-auto mb-4"
                 style={{ width: "150px" }}
               />
               <div className="card-body">
-                <h5 className="mb-3">Adnan Asif</h5>
+                <h5 className="mb-3">Qazi Muhammad Imran</h5>
                 <p>Web Developer</p>
                 <p className="text-muted">
-                  We had given a project to Arslan Asif for frontend development
-                  and he has done an excellent job within a short frame of time.
-                  Work submitted was pixel perfect. I am a very fussy client and
-                  they have handled every very professionally.
+                  As a web developer, I had the pleasure of collaborating with
+                  Malik Arslan on a complex project. Their mastery of the MERN
+                  stack, coupled with a keen eye for design using CSS frameworks
+                  like Tailwind and React CSS libraries, significantly elevated
+                  our web applications. Arslan's expertise and commitment to
+                  delivering high-quality code make them an invaluable asset to
+                  any development team.
                 </p>
                 <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
                   <li>
@@ -63,18 +67,24 @@ const Testimonials = () => {
               style={{ width: "24rem", minHeight: "500px" }}
             >
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                src={require("../../images/testi2.jpeg")}
                 alt="avatar"
                 className="rounded-circle mx-auto mb-4"
                 style={{ width: "150px" }}
               />
               <div className="card-body">
                 <h5 className="mb-3">Ahssam Saeed</h5>
-                <p>Mern Stack Developer</p>
+                <p>Digital Marketing</p>
                 <p className="text-muted">
-                  I am having the privilege of working closely with Brijeshkumar
-                  in NEWERO Techspot, and I can confidently say that he is an
-                  exceptional front end developer also Back End.
+                  In my role as a digital marketing agent, I've had the
+                  opportunity to work closely with Malik Arslan. Their
+                  proficiency in frontend technologies like React.js and Next.js
+                  played a pivotal role in creating visually engaging and
+                  user-friendly interfaces for our campaigns. Arslan's attention
+                  to detail and ability to seamlessly integrate with our
+                  marketing strategies made our collaboration exceptionally
+                  successful.
                 </p>
                 <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
                   <li>
@@ -90,7 +100,7 @@ const Testimonials = () => {
                     <FaStar />
                   </li>
                   <li>
-                    <FaStarHalfAlt />
+                    <FaStar />
                   </li>
                 </ul>
               </div>
@@ -102,20 +112,24 @@ const Testimonials = () => {
               style={{ width: "24rem", minHeight: "500px" }}
             >
               <img
-                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
+                src={require("../../images/testi3a.jpeg")}
                 alt="avatar"
                 className="rounded-circle mx-auto mb-4"
                 style={{ width: "150px" }}
               />
               <div className="card-body">
-                <h5 className="mb-3">Maria Kate</h5>
-                <p>Photographer</p>
+                <h5 className="mb-3">Riwzan Mehmmod</h5>
+                <p>Front End Developer</p>
                 <p className="text-muted">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-                  et deleniti nesciunt sint eligendi reprehenderit reiciendis,
-                  quibusdam illo, beatae quia fugit consequatur laudantium velit
-                  magnam error. Consectetur distinctio fugit doloremque.
+                  Malik Arslan's front-end expertise elevates projects with
+                  visually appealing, efficient user interfaces. His commitment
+                  to innovation and staying current with the latest technologies
+                  ensures our applications are at the forefront. Collaborating
+                  with Malik has been a pleasure, and his contributions play a
+                  key role in our project success.
                 </p>
+
                 <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
                   <li>
                     <FaStar />

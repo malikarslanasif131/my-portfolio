@@ -42,18 +42,18 @@ const Project = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">BlogBooth</h5>
+                <h3 className="card-title">BlogBooth</h3>
                 <p>
-                  <span className="badge__style pink_badge">React JS</span>
-                  <span className="badge__style crimson_badge">
-                    Express (Node Js)
-                  </span>
-                  <span className="badge__style teal_badge">MongoDB</span>
-                  <span className="badge__style indigo_badge">Boostrap</span>
+                  <span className="badge__style badge__color">React JS</span>
+                  <span className="badge__style badge__color">Express Js</span>
+                  <span className="badge__style badge__color">MongoDB</span>
+                  <span className="badge__style badge__color">Bootstrap</span>
                 </p>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Built BlogBooth with MERN stack, featuring admin dashboard,
+                  user authentication, account creation, blog posting, and
+                  advanced functionalities like filtering and searching for an
+                  enhanced user experience.
                 </p>
                 <div className="d-grid gap-2 col-12 mx-auto">
                   <button
@@ -84,17 +84,18 @@ const Project = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">E-Commerce </h5>
+                <h3 className="card-title">E-Commerce </h3>
                 <p>
-                  <span className="badge__style blue_badge">React JS</span>
-                  <span className="badge__style teal_badge">MongoDB</span>
-                  <span className="badge__style pink_badge">
-                    Express (Node Js)
-                  </span>
+                  <span className="badge__style badge__color">React JS</span>
+                  <span className="badge__style badge__color">Redux</span>
+                  <span className="badge__style badge__color">MongoDB</span>
+                  <span className="badge__style badge__color">Express Js</span>
                 </p>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Developed an MERN E-commerce site with admin dashboard for
+                  product management, user authentication, account creation,
+                  cart functionality, seamless payment, and advanced features
+                  like filtering and searching.
                 </p>
                 <div className="d-grid gap-2 col-12 mx-auto">
                   <button
@@ -115,7 +116,7 @@ const Project = () => {
           </div>
           <div className="col-md-4 ">
             <span className="top_badge__style badge__style_color">
-              CRUD MERN
+              MERN Stack
             </span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
@@ -125,18 +126,20 @@ const Project = () => {
                 alt="..."
               />
               <div className="card-body">
-                <h5 className="card-title">MERN Todo</h5>
+                <h3 className="card-title">Expense Management</h3>
                 <p>
-                  <span className="badge__style indigo_badge">Express Js</span>
-                  <span className="badge__style goldenrod_badge">MongoDB</span>
-                  <span className="badge__style crimson_badge">
-                    Tailwind Css
+                  <span className="badge__style badge__color">Express Js</span>
+                  {/* <span className="badge__style badge__color">MongoDB</span> */}
+                  <span className="badge__style badge__color">
+                    Ant Design UI
                   </span>
-                  <span className="badge__style blue_badge">React JS</span>
+                  <span className="badge__style badge__color">React JS</span>
                 </p>
                 <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Crafted a MERN Expense Management site with user
+                  authentication, account creation, and features enabling users
+                  to record, track incomes and expenses, and analyze data within
+                  custom date ranges.
                 </p>
                 <div className="d-grid gap-2 col-12 mx-auto">
                   {/* <button
@@ -163,7 +166,7 @@ const Project = () => {
           </div>
           {/* ==================three card end ================ */}
           {/* <div className="col-md-4">
-            <span className="top_badge__style teal_badge">MERN Stack</span>
+            <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
                 src={require("../../images/ecommerce.jpg")}
@@ -174,8 +177,47 @@ const Project = () => {
               <div className="card-body">
                 <h5 className="card-title">E-Commerce </h5>
                 <p>
-                  <span className="badge__style blue_badge">React JS</span>
-                  <span className="badge__style teal_badge">MongoDB</span>
+                  <span className="badge__style badge__color">React JS</span>
+                  <span className="badge__style badge__color">MongoDB</span>
+                  <span className="badge__style badge__color">
+                    Express (Node Js)
+                  </span>
+                </p>
+                <p className="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <div className="d-grid gap-2 col-12 mx-auto">
+                  <button
+                    className="btn btn-primary btn_color_pink"
+                    type="button"
+                    onClick={() =>
+                      handleOpenModal(
+                        require("../../images/v1.mp4"),
+                        "E-Commerce "
+                      )
+                    }
+                  >
+                    Watch Video
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="col-md-4">
+            <span className="top_badge__style badge__color">MERN Stack</span>
+            <div className="card card__style" style={{ width: "24rem" }}>
+              <img
+                src={require("../../images/ecommerce.jpg")}
+                style={{ height: "220px" }}
+                className="card-img-top"
+                alt="..."
+              />
+              <div className="card-body">
+                <h5 className="card-title">E-Commerce </h5>
+                <p>
+                  <span className="badge__style badge__color">React JS</span>
+                  <span className="badge__style badge__color">MongoDB</span>
                   <span className="badge__style pink_badge">
                     Express (Node Js)
                   </span>
@@ -202,7 +244,7 @@ const Project = () => {
             </div>
           </div>{" "}
           <div className="col-md-4">
-            <span className="top_badge__style teal_badge">MERN Stack</span>
+            <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" style={{ width: "24rem" }}>
               <img
                 src={require("../../images/ecommerce.jpg")}
@@ -213,47 +255,8 @@ const Project = () => {
               <div className="card-body">
                 <h5 className="card-title">E-Commerce </h5>
                 <p>
-                  <span className="badge__style blue_badge">React JS</span>
-                  <span className="badge__style teal_badge">MongoDB</span>
-                  <span className="badge__style pink_badge">
-                    Express (Node Js)
-                  </span>
-                </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "E-Commerce "
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-md-4">
-            <span className="top_badge__style teal_badge">MERN Stack</span>
-            <div className="card card__style" style={{ width: "24rem" }}>
-              <img
-                src={require("../../images/ecommerce.jpg")}
-                style={{ height: "220px" }}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">E-Commerce </h5>
-                <p>
-                  <span className="badge__style blue_badge">React JS</span>
-                  <span className="badge__style teal_badge">MongoDB</span>
+                  <span className="badge__style badge__color">React JS</span>
+                  <span className="badge__style badge__color">MongoDB</span>
                   <span className="badge__style pink_badge">
                     Express (Node Js)
                   </span>

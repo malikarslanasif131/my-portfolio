@@ -19,12 +19,19 @@ import "./Skills.css";
 const Skills = () => {
   const stackData = [
     { title: "React Js", image: require("../../images/react.png") },
+    { title: "Next Js", image: require("../../images/next_js.png") },
     { title: "Node Js", image: require("../../images/node.png") },
-    { title: "Mongo DB", image: require("../../images/mongo.png") },
     { title: "Express Js", image: require("../../images/express.png") },
-    { title: "PhP", image: require("../../images/php.png") },
+    { title: "Mongo DB", image: require("../../images/mongo.png") },
     { title: "My SQL", image: require("../../images/mysql.png") },
+    { title: "PhP", image: require("../../images/php.png") },
     { title: "Python", image: require("../../images/python.png") },
+    { title: "JavaScript", image: require("../../images/js.png") },
+    { title: "HTML", image: require("../../images/html.png") },
+    { title: "CSS", image: require("../../images/css.png") },
+    { title: "jQuery", image: require("../../images/jQuery.png") },
+    { title: "Bootstrap", image: require("../../images/bootstrap.png") },
+    { title: "Redux Toolkit", image: require("../../images/Redux.png") },
     { title: "Drupal", image: require("../../images/drupal.png") },
   ];
 
@@ -39,8 +46,12 @@ const Skills = () => {
                 <GiStack />
               </span>
             </h2>
+            <h5 className="pb-5 pt-3 color_custom_text">
+              I excel in diverse technologies, delivering exceptional solutions
+              that bring creativity and proficiency to every project.
+            </h5>
             <div className="stack__list">
-              <div className="container p-3">
+              <div className="container p-2">
                 <div className="row">
                   <Swiper
                     cssMode={true}
@@ -57,11 +68,11 @@ const Skills = () => {
                       Mousewheel,
                       Keyboard,
                     ]}
-                    spaceBetween={60}
-                    slidesPerView={4}
+                    spaceBetween={40}
+                    slidesPerView={5}
                     // navigation
                     autoplay={{
-                      delay: 1500,
+                      delay: 1000,
                       disableOnInteraction: false,
                     }}
                     loop={true}

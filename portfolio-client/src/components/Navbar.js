@@ -67,10 +67,21 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-light sticky-top nav__style">
         <div className="container-fluid">
           <a
-            className="navbar-brand custom_nav_brand px-5 text-light "
+            className="navbar-brand custom_nav_brand px-5 pb-0 text-light "
             href="/"
           >
-            &lt; Malik Arslan Asif /&gt;
+            {/* &lt; Malik Arslan Asif /&gt; */}
+            <img
+              src={require("../images/arslogo.png")}
+              src={require("../images/pinklogo-bg.png")}
+              // src={require("../images/download.gif")}
+              style={{
+                objectFit: "scale-down",
+                width: "50%",
+                height: "50%",
+              }}
+              alt="logo"
+            />
           </a>
           <button
             className="navbar-toggler"

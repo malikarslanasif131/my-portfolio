@@ -20,23 +20,23 @@ const Footer = () => {
               <li className="ms-4  ">
                 <Link
                   className="li_circle m-auto d-flex align-items-center  text-dark"
-                  to="#"
+                  to="https://web.facebook.com/malikarslan.asif"
                 >
                   <SiFacebook size={25} className="text-center" />
                 </Link>
               </li>
-              <li className="ms-4  ">
+              {/* <li className="ms-4  ">
                 <Link
                   className="li_circle m-auto d-flex align-items-center text-dark"
                   to="#"
                 >
                   <SiTwitter size={25} />
                 </Link>
-              </li>
+              </li> */}
               <li className="ms-4  ">
                 <Link
                   className="li_circle m-auto d-flex align-items-center text-dark"
-                  to="#"
+                  to="https://github.com/malikarslanasif131"
                 >
                   <SiGithub size={25} />
                 </Link>
@@ -44,7 +44,7 @@ const Footer = () => {
               <li className="ms-4  ">
                 <Link
                   className="li_circle m-auto d-flex align-items-center text-dark "
-                  to="#"
+                  to="https://www.linkedin.com/in/malikarslanasif131"
                 >
                   <SiLinkedin size={25} />
                 </Link>

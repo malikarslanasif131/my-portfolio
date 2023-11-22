@@ -26,13 +26,17 @@ const Service = () => {
             <div className="col-md-4 service-box">
               <div className="m-2 bg-custom-Color">
                 <div className="icon_back_style">
-                  <FaMobileAlt className="icon-style" size={120} />
+                  <FaMobileAlt
+                    className="icon-style"
+                    size={120}
+                    color="#f25476"
+                  />
                 </div>
-                <h2 className="pt-2">Mobile-App</h2>
+                <h3 className="pt-2">Full-Stack Development</h3>
                 <p className="px-3 text-start ms-2">
-                  Responsive Web With All Phones And Easy To Use On
-                  Devices.Implementing the Front end, back end, and databases
-                  using the latest Technologies.
+                  Maximize web solutions with my full-stack development. Dynamic
+                  frontends using React.js/Next.js, robust backends with
+                  Node.js/PHP. Elevate web presence with MERN stack expertise.
                 </p>
               </div>
             </div>
@@ -40,12 +44,18 @@ const Service = () => {
             <div className="col-md-4 service-box">
               <div className="m-2 bg-custom-Color">
                 <div className="icon_back_style">
-                  <FaDesktop className="icon-style" size={120} />
+                  <FaDesktop
+                    className="icon-style"
+                    size={120}
+                    color="#f25476"
+                  />
                 </div>
-                <h2 className="pt-2">Web Developer</h2>
+                <h3 className="pt-2">CMS Drupal Expertise</h3>
                 <p className="px-3 text-start ms-2">
-                  Develop websites using MERN Stack, Implementing the Front end,
-                  back end, and databases using the latest Technologies.
+                  Customize your CMS to meet unique needs. As a Drupal expert, I
+                  create fully functional websites from scratch, integrating
+                  custom modules for enhanced functionality and seamless
+                  operation.
                 </p>
               </div>
             </div>
@@ -53,13 +63,18 @@ const Service = () => {
             <div className="col-md-4 service-box">
               <div className="m-2 bg-custom-Color">
                 <div className="icon_back_style">
-                  <FaTabletAlt className="icon-style" size={120} />
+                  <FaTabletAlt
+                    className="icon-style"
+                    size={120}
+                    color="#f25476"
+                  />
                 </div>
-                <h2 className="pt-2">Responsive Web</h2>
+                <h3 className="pt-2">Responsive Web</h3>
                 <p className="px-3 text-start ms-2">
-                  Responsive web design is about creating web pages that look
-                  good on all devices! A responsive web design will
-                  automatically adjust for different screen sizes and viewports.
+                  Craft websites with responsive design, ensuring optimal
+                  viewing across various devices. Enhance user experience and
+                  accessibility by adapting seamlessly to different screen
+                  sizes.
                 </p>
               </div>
             </div>
