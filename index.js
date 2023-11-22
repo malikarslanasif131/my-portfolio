@@ -28,11 +28,11 @@ app.use(express.json());
 app.use(
   morgan(":method :url :status :res[content-length] - :response-time ms")
 );
-app.use(express.static(path.join(__dirname, "/build")));
+app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
 // Define a route for the server
 
 app.use("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "/build/index.html"));
+  res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
 });
 
 app.use("/api/contact", contactRoutes);
