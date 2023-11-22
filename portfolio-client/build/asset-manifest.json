@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3feacde.css",
+    "main.js": "/static/js/main.7fcfdbd7.js",
+    "static/js/787.7982a17c.chunk.js": "/static/js/787.7982a17c.chunk.js",
+    "static/media/v2.mp4": "/static/media/v2.4b6dd9084bfb17d67d5a.mp4",
+    "static/media/v1.mp4": "/static/media/v1.204cb3b787ac3c8ecbaa.mp4",
+    "static/media/Arslan_Asif_CV.pdf": "/static/media/Arslan_Asif_CV.928faa590f4f151e7122.pdf",
+    "static/media/my-profile.jpg": "/static/media/my-profile.8b46ebe206e7724bccc1.jpg",
+    "static/media/portfolio.png": "/static/media/portfolio.138d05947b68ffe41bbd.png",
+    "static/media/php.png": "/static/media/php.95a61c5c56b6407a8625.png",
+    "static/media/ecommerce.jpg": "/static/media/ecommerce.a48c4bf83078a01d9a2f.jpg",
+    "static/media/blog.png": "/static/media/blog.856182a82cd268866534.png",
+    "static/media/mysql.png": "/static/media/mysql.60fe462b4dec8bbc0292.png",
+    "static/media/css.png": "/static/media/css.74ff0b5fd86f9eadddd3.png",
+    "static/media/html.png": "/static/media/html.f3aa7827cd5160f3fc1c.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.d5210cdeab1bc94309c4.png",
+    "static/media/next_js.png": "/static/media/next_js.ab8293c95faf26dc5e3e.png",
+    "static/media/testi3a.jpeg": "/static/media/testi3a.d567a049bada357135d4.jpeg",
+    "static/media/testi2.jpeg": "/static/media/testi2.f71058c8fe2aff604b62.jpeg",
+    "static/media/contact-300x218.png": "/static/media/contact-300x218.d7d21893e656bef5a870.png",
+    "static/media/Redux.png": "/static/media/Redux.b426d97de12d4dab1c06.png",
+    "static/media/arslogo.png": "/static/media/arslogo.9fafb006a2cc3c79c93e.png",
+    "static/media/pinklogo-bg.png": "/static/media/pinklogo-bg.2142de22349f54e70e60.png",
+    "static/media/js.png": "/static/media/js.1707d09a3f6f31bb97e8.png",
+    "static/media/python.png": "/static/media/python.53f15fae5e9bab19ed7d.png",
+    "static/media/express.png": "/static/media/express.39a0f4c3d981885c64f8.png",
+    "static/media/jQuery.png": "/static/media/jQuery.347f93d8463ec15aa303.png",
+    "static/media/testi1.jpg": "/static/media/testi1.c60e09d226f568ebe313.jpg",
+    "index.html": "/index.html",
+    "main.c3feacde.css.map": "/static/css/main.c3feacde.css.map",
+    "main.7fcfdbd7.js.map": "/static/js/main.7fcfdbd7.js.map",
+    "787.7982a17c.chunk.js.map": "/static/js/787.7982a17c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3feacde.css",
+    "static/js/main.7fcfdbd7.js"
+  ]
+}
