@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 import path from "path"; // Import the 'path' module
 
 const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -22,27 +22,24 @@ import infoRoutes from "./routes/infoRoutes.js";
 //config connect
 dotenv.config();
 // connectDB();
-// const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(
   morgan(":method :url :status :res[content-length] - :response-time ms")
 );
-
+app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
 // Define a route for the server
+
+app.use("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
+});
 
 app.use("/api/contact", contactRoutes);
 app.use("/api/saveClientInfo", infoRoutes);
 
 app.get("/api/test", (req, res) => {
   res.send("Hello from the Express server and test middleware!");
-});
-
-app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
-
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./portfolio-client/build/index.html"));
 });
 
 const port = process.env.PORT || 8080;
