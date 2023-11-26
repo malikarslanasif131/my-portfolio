@@ -1,13 +1,13 @@
-.service__card{
+.service__card {
     background-color: var(--secondary-color)93;
     -webkit-box-shadow: 0 0 32px 32px #dddddd;
-        -moz-box-shadow: 0 0 32px 32px #dddddd;
-        box-shadow: 0 0 32px 32px #dddddd;
-        /* background-color: var(--secondary-color); */
-        font-size: 18px;
-        border-radius: 5px;
-        /* word-spacing: 2x; */
-        letter-spacing: 1px;
+    -moz-box-shadow: 0 0 32px 32px #dddddd;
+    box-shadow: 0 0 32px 32px #dddddd;
+    /* background-color: var(--secondary-color); */
+    font-size: 18px;
+    border-radius: 5px;
+    /* word-spacing: 2x; */
+    letter-spacing: 1px;
 }
 
 
@@ -25,40 +25,45 @@
     color: #f25476;
     /* Specify the color you want on hover */
 }
-.color_custom_text{
+
+.color_custom_text {
     color: #f25476dc;
 }
 
 .service-box {
     text-align: center;
-     
-    
-    
+
+
+
 }
-.bg-custom-Color{
+
+.bg-custom-Color {
     transition: color 0.3s ease-in-out;
     background-color: aliceblue;
-    border-radius: 20px ;
+    border-radius: 20px;
     height: 500px !important;
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 .bg-custom-Color:hover {
     transition: color 0.3s ease-in-out;
     background-color: rgb(219, 232, 243);
-    border-radius: 20px ;
+    border-radius: 20px;
 
 }
+
 /* Add the following CSS rules */
 .bg-custom-Color:hover .icon-style {
     color: #f25476;
 }
+
 /* .service-box:hover {
     background-color: #f0f0f0;
 
 } */
 
-.icon_back_style{
+.icon_back_style {
     text-align: center;
     margin: auto !important;
     width: 250px;
@@ -69,10 +74,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
 }
 
-.icon_back_style:hover{
+.icon_back_style:hover {
     margin: auto !important;
     width: 250px;
     height: 250px;
@@ -83,5 +88,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+    .service__card {
+        font-size: 15px;
+        letter-spacing: 0px;
+        padding: 5px !important;
+    }
+
+    .service__card-title {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .element.style {}
+
+    .icon_back_style {
+        width: 150px;
+        height: 150px;
+    }
+
+    .icon-style {
+        width: 80px;
+    }
+
+    .bg-custom-Color {
+
+        height: 326px !important;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
 }

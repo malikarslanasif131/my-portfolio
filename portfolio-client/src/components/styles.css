@@ -127,3 +127,12 @@ to bottom right,
                 #403F44, #1E1B32);
     color : #EA738D !important;
 }
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .custom_nav_brand {
+        padding-left: 10px !important;
+        padding-right: 0px !important;
+        margin-right: 0px !important;
+    }
+}

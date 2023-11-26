@@ -38,4 +38,43 @@ background: linear-gradient(to bottom right,
 }
 .swiper-wrapper{
     height: 190px !important;
+    padding: 10px !important;
 }
+.swiper-initialized {
+}
+.card_style_stack {
+    /* width: 150px !important; */
+    /* font-size: 15px; */
+    padding: 10px !important;
+}
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .skill__styles{
+        padding: 10px !important;
+    }
+    .stack__title{
+    font-size: 28px;
+    
+}.icon_about{
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;
+}.color_custom_text{
+    font-size: medium;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+
+}.card_style_stack{
+    /* width: 150px !important; */
+    font-size: 15px;
+    padding: 10px !important;
+}.card-img-top{}
+.swiper-initialized{
+    padding: 8px !important;
+}
+
+}
+
+
+

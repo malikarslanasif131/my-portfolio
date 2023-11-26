@@ -1,20 +1,22 @@
-.about__title{
+.about__title {
     color: var(--primary-color);
     font-weight: 400;
     border-bottom: 1px solid var(--primary-color);
 }
-.about__card{
-    -webkit-box-shadow: 0 0 32px 32px #dddddd;
-        -moz-box-shadow: 0 0 32px 32px #dddddd;
-        box-shadow: 0 0 32px 32px #dddddd;
 
-        background-color: rgba(144, 173, 226, 0.8);
-            color: #ffffffd2 !important;
-            font-size: 20px;
-            border-radius: 5px;
-            word-spacing: 1x;
-            /* letter-spacing: 1px; */
+.about__card {
+    -webkit-box-shadow: 0 0 32px 32px #dddddd;
+    -moz-box-shadow: 0 0 32px 32px #dddddd;
+    box-shadow: 0 0 32px 32px #dddddd;
+
+    background-color: rgba(144, 173, 226, 0.8);
+    color: #ffffffd2 !important;
+    font-size: 20px;
+    border-radius: 5px;
+    word-spacing: 1x;
+    /* letter-spacing: 1px; */
 }
+
 /* 
 .about__card::before {
     content: "";
@@ -41,15 +43,16 @@
     box-shadow: 0 0 32px 32px #dddddd;
 } */
 
-.about_details{
+.about_details {
     text-indent: 30px;
     text-align: justify;
     /* text-justify: inter-word; */
-    font-size: 18px;    
+    font-size: 18px;
     letter-spacing: 1px;
 
 }
-.icon_about{
+
+.icon_about {
     font-size: 40px;
     padding: 0;
     margin: 0;
@@ -63,7 +66,8 @@
     gap: 70px;
 
 }
-.custom_width_150{
+
+.custom_width_150 {
     width: 300px !important;
     border-radius: 10px !important;
 
@@ -72,7 +76,47 @@
 .custom_width_150:hover {
     /* background-color: #EA738D !important; */
     background: linear-gradient(to bottom right,
-                #5B7FFF, #33CCFC);
-                /* #FF9E68, #FF68DE); */
+            #5B7FFF, #33CCFC);
+    /* #FF9E68, #FF68DE); */
     color: #fffffff1 !important;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .about__card {
+        padding: 1rem !important;
+    }
+
+    .about__title {
+        padding-top: 1.3rem;
+    }
+
+    .about_detail-sec {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-left: 2px !important;
+        margin-right: 2px !important;
+    }
+
+    .about_first-p {
+        margin-top: 1% !important;
+    }
+
+    .about_details {
+
+        font-size: 15px;
+        letter-spacing: 0px;
+        padding: 1%;
+    }
+
+    .about__cards {
+        gap: 20px;
+
+    }
+    .custom_width_150{
+        width: 150px !important;
+        font-size: 16px;
+    }
+    .first-about-card{
+        width: 250px !important;
+    }
 }

@@ -68,8 +68,26 @@ const Skills = () => {
                       Mousewheel,
                       Keyboard,
                     ]}
-                    spaceBetween={40}
-                    slidesPerView={5}
+                    // spaceBetween={40}
+                    // slidesPerView={5}
+                    breakpoints={{
+                      1400: {
+                        slidesPerView: 5,
+                        spaceBetween: 40,
+                      },
+                      1200: {
+                        slidesPerView: 4,
+                        spaceBetween: 30,
+                      },
+                      768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20,
+                      },
+                      380: {
+                        slidesPerView: 2,
+                        spaceBetween: 10,
+                      },
+                    }}
                     // navigation
                     autoplay={{
                       delay: 1000,

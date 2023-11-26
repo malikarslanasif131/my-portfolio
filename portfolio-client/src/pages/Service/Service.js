@@ -10,7 +10,7 @@ const Service = () => {
     <div id="service_id" className="container service__card my-5 p-5 pt-0">
       <div className="row">
         <div className="col-md-12 text-center">
-          <h2 className="display-5 my-5 education__title text-uppercase mb-4">
+          <h2 className="display-5 my-5 education__title service__card-title text-uppercase mb-4">
             Services
             <span className="align-top p-1 m-1 icon_about">
               {" "}

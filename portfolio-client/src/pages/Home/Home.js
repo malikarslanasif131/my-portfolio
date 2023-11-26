@@ -26,9 +26,9 @@ const Home = () => {
         <div className="row mx-auto d-flex justify-content-center">
           {/* // col section 1 */}
           <div className="col-md-5">
-            <div className="m-auto image_round">
+            <div className="m-auto image_round class-sm-imgdiv">
               <img
-                className="ms-5 mt-5 image_round"
+                className="ms-5 mt-5 image_round class-sm-img"
                 src={logo}
                 width={500}
                 height={570}
@@ -38,7 +38,7 @@ const Home = () => {
           </div>
 
           {/* // col section 2 */}
-          <div className="col-md-5 m-5 p_100 ">
+          <div className="col-md-5 m-5 p_100 class-sm-sec-two ">
             <h2 className="">
               Hi i'm <p className="d-inline">{text}</p>
             </h2>
@@ -52,7 +52,7 @@ const Home = () => {
                 }}
               />
             </h3>
-            <div className="mt-4">
+            <div className="mt-4 class-sm-sec-btn">
               <a
                 href={contactLink ? `https://${contactLink}` : ""}
                 target="_blank"

@@ -36,3 +36,38 @@ color: #fff;
                 #403F44, #1E1B32); */
     color : #0dc143;
 }
+
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .home__section{
+        padding-bottom: 2px !important;
+    }
+    .class-sm-imgdiv {
+        text-align: center;
+    }
+    .class-sm-img{
+        margin: 0 !important;
+        width: 40% !important;
+        height: 40% !important;
+
+    }
+    .class-sm-sec-two{
+        padding: 10px !important;
+        text-align: center;
+    }
+    .class-sm-sec-two h2 {
+        font-size: 18px;
+      }
+    .Typewriter__wrapper{
+        font-size: 16px !important;
+    }
+    .class-sm-sec-btn {
+        margin-top: 1rem !important;
+    }
+    .class-sm-sec-btn a {
+        font-size: 16px !important;
+    }
+    ._blank{
+        display: none;
+    }
+}

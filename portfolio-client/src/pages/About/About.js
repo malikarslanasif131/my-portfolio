@@ -23,8 +23,8 @@ const About = () => {
               </span>
             </div>
 
-            <div className="mx-5 px-5">
-              <p className="about_details mt-5">
+            <div className="mx-5 px-5 about_detail-sec">
+              <p className="about_details mt-5 about_first-p">
                 As a developer, I specialize in Full-stack development, with a
                 particular affinity for the <b className="fs-3">MERN Stack</b>.
                 My journey began by honing my proficiency in HTML, CSS, and
@@ -50,11 +50,11 @@ const About = () => {
               </p>
             </div>
             <div className="about__cards">
-              <article className="card text-dark text-center custom_width_150 p-3">
+              <article className="card text-dark text-center custom_width_150 p-3 first-about-card">
                 <span className="py-3">
                   <HiBadgeCheck size={25} />
                 </span>
-                <h2>3+</h2>
+                <h3>3+</h3>
                 <small>YEAR OF EXPERIENCE</small>
               </article>
               <article className="card text-dark text-center custom_width_150 p-3">
