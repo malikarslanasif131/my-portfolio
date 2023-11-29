@@ -70,20 +70,20 @@ const Contact = () => {
               </span>
             </h1>
           </div>
-          <div className="col-md-4 offset-1">
+          <div className="col-md-4 offset-1 contact-us-custom-col">
             <div className="m-auto image_round">
               <img
-                className="image__round"
+                className="image__round contact__image"
                 // src={require("../../images/contact-us.jpg")}
                 src={require("../../images/contact-300x218.png")}
-                width={350}
-                height={300}
+                // width={350}
+                // height={300}
                 alt="Logo"
               />
             </div>
           </div>
           <div className="col-md-6 mx-auto">
-            <form>
+            <form className="contact-form">
               <div className="mb-3">
                 <input
                   className="form-control form-control-lg"

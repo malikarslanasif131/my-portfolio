@@ -1,0 +1,27 @@
+.card-style-testimonial {
+    width: 24rem;
+    min-height: 575px;
+}
+
+.testi-img {
+    width: 150px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .card-style-testimonial {
+        width: 19rem;
+        font-size: 13px;
+        min-height: 500px;
+        margin: auto;
+    }
+
+    .testi-img {
+        width: 120px;
+        margin-bottom: 0px !important;
+    }
+
+    .card-body h5 {
+        margin-bottom: 5px;
+        font-size: medium;
+    }
+}

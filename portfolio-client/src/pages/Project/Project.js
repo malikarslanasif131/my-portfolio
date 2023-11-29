@@ -21,7 +21,7 @@ const Project = () => {
     <>
       <div id="project_id" className="container my-5">
         <div className="row">
-          <div className="m-3">
+          <div className="m-3 main-div-class">
             <h1 className="display-5 text-center">
               Projects{" "}
               <span className="align-top p-1 m-1 icon_about">
@@ -34,11 +34,10 @@ const Project = () => {
             <span className="top_badge__style badge__style_color">
               Full Stack{" "}
             </span>
-            <div className="card card__style " style={{ width: "24rem" }}>
+            <div className="card card__style ">
               <img
                 src={require("../../images/blog.png")}
                 className="card-img-top"
-                style={{ height: "220px" }}
                 alt="..."
               />
               <div className="card-body">
@@ -76,10 +75,9 @@ const Project = () => {
             <span className="top_badge__style badge__style_color">
               MERN Stack
             </span>
-            <div className="card card__style" style={{ width: "24rem" }}>
+            <div className="card card__style">
               <img
                 src={require("../../images/ecommerce.jpg")}
-                style={{ height: "220px" }}
                 className="card-img-top"
                 alt="..."
               />
@@ -118,10 +116,9 @@ const Project = () => {
             <span className="top_badge__style badge__style_color">
               MERN Stack
             </span>
-            <div className="card card__style" style={{ width: "24rem" }}>
+            <div className="card card__style">
               <img
                 src={require("../../images/portfolio.png")}
-                style={{ height: "220px" }}
                 className="card-img-top"
                 alt="..."
               />
@@ -167,10 +164,10 @@ const Project = () => {
           {/* ==================three card end ================ */}
           {/* <div className="col-md-4">
             <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" style={{ width: "24rem" }}>
+            <div className="card card__style" >
               <img
                 src={require("../../images/ecommerce.jpg")}
-                style={{ height: "220px" }}
+                
                 className="card-img-top"
                 alt="..."
               />
@@ -206,10 +203,10 @@ const Project = () => {
           </div>{" "}
           <div className="col-md-4">
             <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" style={{ width: "24rem" }}>
+            <div className="card card__style" >
               <img
                 src={require("../../images/ecommerce.jpg")}
-                style={{ height: "220px" }}
+                
                 className="card-img-top"
                 alt="..."
               />
@@ -245,10 +242,10 @@ const Project = () => {
           </div>{" "}
           <div className="col-md-4">
             <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" style={{ width: "24rem" }}>
+            <div className="card card__style" >
               <img
                 src={require("../../images/ecommerce.jpg")}
-                style={{ height: "220px" }}
+                
                 className="card-img-top"
                 alt="..."
               />

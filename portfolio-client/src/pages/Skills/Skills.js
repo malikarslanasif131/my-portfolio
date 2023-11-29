@@ -83,7 +83,7 @@ const Skills = () => {
                         slidesPerView: 3,
                         spaceBetween: 20,
                       },
-                      380: {
+                      320: {
                         slidesPerView: 2,
                         spaceBetween: 10,
                       },

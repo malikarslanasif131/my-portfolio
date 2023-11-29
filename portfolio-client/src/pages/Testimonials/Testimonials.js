@@ -18,16 +18,12 @@ const Testimonials = () => {
             </h1>
           </div>
           <div className="col-md-4 ">
-            <div
-              className="card text-center  py-3 "
-              style={{ width: "24rem", minHeight: "500px" }}
-            >
+            <div className="card text-center py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
                 src={require("../../images/testi1.jpg")}
                 alt="avatar"
-                className="rounded-circle mx-auto mb-4"
-                style={{ width: "150px" }}
+                className="rounded-circle mx-auto mb-4 testi-img"
               />
               <div className="card-body">
                 <h5 className="mb-3">Qazi Muhammad Imran</h5>
@@ -62,16 +58,12 @@ const Testimonials = () => {
             </div>
           </div>
           <div className="col-md-4 ">
-            <div
-              className="card text-center  py-3 "
-              style={{ width: "24rem", minHeight: "500px" }}
-            >
+            <div className="card text-center  py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
                 src={require("../../images/testi2.jpeg")}
                 alt="avatar"
-                className="rounded-circle mx-auto mb-4"
-                style={{ width: "150px" }}
+                className="rounded-circle mx-auto mb-4 testi-img"
               />
               <div className="card-body">
                 <h5 className="mb-3">Ahssam Saeed</h5>
@@ -107,16 +99,12 @@ const Testimonials = () => {
             </div>
           </div>{" "}
           <div className="col-md-4 ">
-            <div
-              className="card text-center  py-3 "
-              style={{ width: "24rem", minHeight: "500px" }}
-            >
+            <div className="card text-center  py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"
                 src={require("../../images/testi3a.jpeg")}
                 alt="avatar"
-                className="rounded-circle mx-auto mb-4"
-                style={{ width: "150px" }}
+                className="rounded-circle mx-auto mb-4 testi-img"
               />
               <div className="card-body">
                 <h5 className="mb-3">Riwzan Mehmmod</h5>

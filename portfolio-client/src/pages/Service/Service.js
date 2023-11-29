@@ -7,7 +7,7 @@ import { MdOutlineElectricalServices } from "react-icons/md";
 
 const Service = () => {
   return (
-    <div id="service_id" className="container service__card my-5 p-5 pt-0">
+    <div id="service_id" className="container service__card my-5 pt-0">
       <div className="row">
         <div className="col-md-12 text-center">
           <h2 className="display-5 my-5 education__title service__card-title text-uppercase mb-4">
