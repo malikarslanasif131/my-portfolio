@@ -72,7 +72,7 @@ const Navbar = () => {
           >
             {/* &lt; Malik Arslan Asif /&gt; */}
             <img
-              src={require("../images/arslogo.png")}
+              // src={require("../images/arslogo.png")}
               src={require("../images/pinklogo-bg.png")}
               // src={require("../images/download.gif")}
               style={{

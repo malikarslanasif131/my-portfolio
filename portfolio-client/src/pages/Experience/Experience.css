@@ -1,24 +1,32 @@
 .experience__styles {
-    background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
 .experience__title {
-    color: var(--primary-color);
-    font-weight: 400;
-    border-bottom: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-weight: 400;
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .experience__card {
-    -webkit-box-shadow: 0 0 32px 32px #dddddd;
-    -moz-box-shadow: 0 0 32px 32px #dddddd;
-    box-shadow: 0 0 32px 32px #dddddd;
-    background-color: var(--secondary-color);
-    font-size: 20px;
-    border-radius: 5px;
-    word-spacing: 2x;
-    letter-spacing: 1px;
+  /* -webkit-box-shadow: 0 0 32px 32px #dddddd;
+  -moz-box-shadow: 0 0 32px 32px #dddddd;
+  box-shadow: 0 0 32px 32px #dddddd;
+  background-color: var(--secondary-color); */
+  background-color: #1f242d;
+  font-size: 20px;
+  border-radius: 5px;
+  word-spacing: 2x;
+  letter-spacing: 1px;
 }
-.change__icon__style:hover{
-    background-color: var(--secondary-color) !important;
-    color: var(--primary-color) !important;
+.change__icon__style:hover {
+  /* background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important; */
+}
+.vertical-timeline-element--work {
+  /* //line */
+}
+.vertical-timeline-element-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 1rem #da712c;
 }

@@ -1,0 +1,140 @@
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgb(255, 115, 0);
+  animation: animate 25s linear infinite;
+  bottom: 0px;
+}
+
+.circles li:nth-child(1) {
+  left: 40%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(4) {
+  left: 45%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 0s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 0s;
+  animation-duration: 20s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 50px;
+  height: 50px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+  left: 90%;
+  /* Adjusted left property */
+  bottom: 0;
+  width: 25px;
+  height: 25px;
+  animation-delay: 0s;
+  animation-duration: 40s;
+  transform-origin: bottom right;
+}
+
+.circles li:nth-child(12) {
+  left: 95%;
+  /* Adjusted left property */
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  animation-delay: 0s;
+  animation-duration: 22s;
+  transform-origin: bottom right;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0);
+    opacity: 0.2;
+    border-radius: 0;
+  }
+  50% {
+    transform: translateY(-500px) rotate(360deg);
+    opacity: 0.5; /* 50% opacity */
+    border-radius: 25%;
+  }
+  to {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}

@@ -1,73 +1,161 @@
-.image_round{
-    border-radius: 50%;
+.image_round {
+  border-radius: 50%;
 }
 
-.bg__color__white{
-   background-color: #e6e5e5d0;
+.bg__color__white {
+  /* background-color: #e6e5e5d0; */
+  background-color: #1f242d !important;
+  color: #fff !important;
 }
 
-.color__yellow__stack{
-    color: var(--primary-color);
+.color__yellow__stack {
+  /* color: var(--primary-color); */
+  color: #da712c;
+  font-weight: lighter;
 }
 
-.sky_blue_color{
-background-color: #89ABE3;
-color: #fff;
+.sky_blue_color {
+  background-color: #89abe3;
+  color: #fff;
 }
+
 .bubblegum_pink_color {
-    background-color: var(--primary-color);
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
 }
-.p_100 {
-    /* padding: 100px; */
-    padding-left: 100px;
-    padding-right: 10px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
-.home__section{
-    /* border-bottom: ; */
-    -webkit-box-shadow: 20px 6px 32px 11px #dddddd;
-        -moz-box-shadow: 20px 6px 32px 11px #dddddd;
-        box-shadow: 20px 6px 32px 11px #dddddd;
-}
-.custom_bg_color_wp{
-    /* color: linear-gradient(to bottom right,
-                #403F44, #1E1B32); */
-    color : #0dc143;
+.btn-home-colors {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  background: #da712c;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #da712c;
+  font-size: 1.2rem;
+  color: #323946;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  transition: 0.5s ease;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
 }
 
+.btn-home-colors:hover {
+  color: #323946 !important;
+}
+
+.p_100 {
+  /* padding: 100px; */
+  padding-left: 100px;
+  padding-right: 10px;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.home__section {
+  /* border-bottom: ; */
+  /* -webkit-box-shadow: 20px 6px 32px 11px #dddddd;
+  -moz-box-shadow: 20px 6px 32px 11px #dddddd;
+  box-shadow: 20px 6px 32px 11px #dddddd; */
+  position: relative;
+}
+
+.custom_bg_color_wp {
+  /* color: linear-gradient(to bottom right,
+                #403F44, #1E1B32); */
+  /* color: #0dc143; */
+  color: #da712c;
+}
+.custom_bg_color_wp:hover {
+  transform: scale(1.5);
+}
+.class-sm-sec-two h2 {
+  font-weight: bold;
+}
 
 @media (min-width: 320px) and (max-width: 768px) {
-    .home__section{
-        padding-bottom: 2px !important;
-    }
-    .class-sm-imgdiv {
-        text-align: center;
-    }
-    .class-sm-img{
-        margin: 0 !important;
-        width: 40% !important;
-        height: 40% !important;
+  .home__section {
+    padding-bottom: 2px !important;
+  }
 
-    }
-    .class-sm-sec-two{
-        padding: 10px !important;
-        text-align: center;
-    }
-    .class-sm-sec-two h2 {
-        font-size: 18px;
-      }
-    .Typewriter__wrapper{
-        font-size: 16px !important;
-    }
-    .class-sm-sec-btn {
-        margin-top: 1rem !important;
-    }
-    .class-sm-sec-btn a {
-        font-size: 16px !important;
-    }
-    ._blank{
-        display: none;
-    }
+  .class-sm-imgdiv {
+    text-align: center;
+  }
+
+  .class-sm-img {
+    margin: 0 !important;
+    width: 40% !important;
+    height: 40% !important;
+  }
+
+  .class-sm-sec-two {
+    padding: 10px !important;
+    text-align: center;
+  }
+
+  .class-sm-sec-two h2 {
+    font-size: 18px;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 16px !important;
+  }
+
+  .class-sm-sec-btn {
+    margin-top: 1rem !important;
+  }
+
+  .class-sm-sec-btn a {
+    font-size: 16px !important;
+  }
+
+  ._blank {
+    display: none;
+  }
+}
+
+@keyframes sunFire {
+  0% {
+    -webkit-box-shadow: 0 0 30px rgb(72, 78, 78);
+    -moz-box-shadow: 0 0 30px rgb(72, 78, 78);
+    box-shadow: 0 0 30px #484e4e;
+  }
+
+  to {
+    -webkit-box-shadow: 0 0 100px rgb(72, 78, 78);
+    -moz-box-shadow: 0 0 100px rgb(72, 78, 78);
+    box-shadow: 0 0 100px #484e4e;
+  }
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-2.4rem);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.img img {
+  position: relative;
+  border-radius: 100%;
+  background-image: linear-gradient(to bottom right, black, white);
+  /* -webkit-box-shadow: 0 0 80px rgb(72, 78, 78);
+  -moz-box-shadow: 0 0 80px rgb(72, 78, 78);
+  box-shadow: 0 0 80px #484e4e; */
+  -webkit-box-shadow: 0 0 80px rgb(72, 78, 78);
+  -moz-box-shadow: 0 0 80px rgb(72, 78, 78);
+  box-shadow: 0 0 80px #da712c;
+
+  -webkit-animation: sunFire 4s infinite alternate;
+  -moz-animation: sunFire 4s infinite alternate;
+  -o-animation: sunFire 4s linear infinite;
+  animation: sunFire 4s infinite alternate;
+  animation: floatImage 4s ease-in-out infinite;
 }

@@ -12,10 +12,10 @@ const Footer = () => {
   return (
     <>
       <div className="container-fluid bgf__color__white px-5">
-        <footer className=" py-5 border-top bgf__color__white">
+        <footer className=" pt-3 bgf__color__white">
           <div className="row"></div>
 
-          <div className="row m-3">
+          <div className="row mt-3">
             <ul className="nav justify-content-center list-unstyled display-inline-block">
               <li className="ms-4  ">
                 <Link
@@ -51,8 +51,8 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <hr className="text-light" />
-          <div className="row m-3 mb-0 pt-3">
+          {/* <hr className="text-light" /> */}
+          <div className="row m-2 mb-0 pt-2">
             <span className="text-muted  fs-5 text-center custom_hover ">
               © 2023 Malik Arslan Asif, Inc
             </span>

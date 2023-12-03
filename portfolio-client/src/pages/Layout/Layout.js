@@ -27,21 +27,21 @@ const Layout = () => {
       <div style={rootStyle} className="layout_main mb-0 pb-0">
         <Navbar />
         <Home />
-        <Seprator />
+        {/* <Seprator /> */}
         <About />
-        <Seprator />
+        {/* <Seprator /> */}
         <Service />
         <Skills />
-        <Seprator />
+        {/* <Seprator /> */}
         <Education />
-        <Seprator />
+        {/* <Seprator /> */}
         <Project />
-        <Seprator />
-        <Seprator />
+        {/* <Seprator /> */}
+        {/* <Seprator /> */}
         <Experience />
-        <Seprator />
+        {/* <Seprator /> */}
         <Testimonials />
-        <Seprator />
+        {/* <Seprator /> */}
 
         <Contact />
         {/* <div className="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="malik-arslan-asif-99b4b2256" data-version="v1"><a className="badge-base__link LI-simple-link" href="https://pk.linkedin.com/in/malik-arslan-asif-99b4b2256?trk=profile-badge">Malik Arslan asif</a></div> */}

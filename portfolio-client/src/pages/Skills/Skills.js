@@ -37,90 +37,93 @@ const Skills = () => {
 
   return (
     <>
-      <div id="skills_id" className="container">
-        <div className="row">
-          <div className="col-md-12 text-center skill__styles p-5">
-            <h2 className="display-5 my-5 stack__title text-uppercase mb-4">
-              Techonology Stack
-              <span className="align-top p-1 m-1 icon_about">
-                <GiStack />
-              </span>
-            </h2>
-            <h5 className="pb-5 pt-3 color_custom_text">
-              I excel in diverse technologies, delivering exceptional solutions
-              that bring creativity and proficiency to every project.
-            </h5>
-            <div className="stack__list">
-              <div className="container p-2">
-                <div className="row">
-                  <Swiper
-                    cssMode={true}
-                    pagination={{
-                      clickable: true,
-                    }}
-                    // navigation={true}
-                    mousewheel={true}
-                    keyboard={true}
-                    modules={[
-                      Navigation,
-                      Autoplay,
-                      Pagination,
-                      Mousewheel,
-                      Keyboard,
-                    ]}
-                    // spaceBetween={40}
-                    // slidesPerView={5}
-                    breakpoints={{
-                      1400: {
-                        slidesPerView: 5,
-                        spaceBetween: 40,
-                      },
-                      1200: {
-                        slidesPerView: 4,
-                        spaceBetween: 30,
-                      },
-                      768: {
-                        slidesPerView: 3,
-                        spaceBetween: 20,
-                      },
-                      320: {
-                        slidesPerView: 2,
-                        spaceBetween: 10,
-                      },
-                    }}
-                    // navigation
-                    autoplay={{
-                      delay: 1000,
-                      disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    // scrollbar={{ draggable: true }}
-                    // onSwiper={(swiper) => console.log(swiper)}
-                    // onSlideChange={() => console.log("slide change")}
-                  >
-                    {stackData.map((stackItem, index) => (
-                      <SwiperSlide key={index}>
-                        <div
-                          className="card card_style_stack"
-                          style={{ height: "140px", overflow: "hidden" }}
-                        >
-                          <img
-                            src={stackItem.image}
-                            className="card-img-top mt-2"
-                            alt={stackItem.title}
-                            style={{
-                              objectFit: "scale-down",
-                              width: "50%",
-                              height: "50%",
-                            }}
-                          />
-                          <div className="card-body pb-0">
-                            <h5>{stackItem.title}</h5>
+      <div className="skills_main p-5">
+        <div id="skills_id" className="container">
+          <div className="row">
+            <div className="col-md-12 text-center skill__styles p-5">
+              <h2 className="display-5 my-5 stack__title text-uppercase mb-4">
+                Techonology Stack
+                <span className="align-top p-1 m-1 icon_about">
+                  <GiStack />
+                </span>
+              </h2>
+              <h5 className="pb-5 pt-3 color_custom_text">
+                I excel in diverse technologies, delivering exceptional
+                solutions that bring creativity and proficiency to every
+                project.
+              </h5>
+              <div className="stack__list">
+                <div className="container p-2">
+                  <div className="row">
+                    <Swiper
+                      cssMode={true}
+                      pagination={{
+                        clickable: true,
+                      }}
+                      // navigation={true}
+                      mousewheel={true}
+                      keyboard={true}
+                      modules={[
+                        Navigation,
+                        Autoplay,
+                        Pagination,
+                        Mousewheel,
+                        Keyboard,
+                      ]}
+                      // spaceBetween={40}
+                      // slidesPerView={5}
+                      breakpoints={{
+                        1400: {
+                          slidesPerView: 5,
+                          spaceBetween: 40,
+                        },
+                        1200: {
+                          slidesPerView: 4,
+                          spaceBetween: 30,
+                        },
+                        768: {
+                          slidesPerView: 3,
+                          spaceBetween: 20,
+                        },
+                        320: {
+                          slidesPerView: 2,
+                          spaceBetween: 10,
+                        },
+                      }}
+                      // navigation
+                      autoplay={{
+                        delay: 3000,
+                        disableOnInteraction: false,
+                      }}
+                      loop={true}
+                      // scrollbar={{ draggable: true }}
+                      // onSwiper={(swiper) => console.log(swiper)}
+                      // onSlideChange={() => console.log("slide change")}
+                    >
+                      {stackData.map((stackItem, index) => (
+                        <SwiperSlide key={index}>
+                          <div
+                            className="card card_style_stack"
+                            style={{ height: "140px", overflow: "hidden" }}
+                          >
+                            <img
+                              src={stackItem.image}
+                              className="card-img-top mt-2"
+                              alt={stackItem.title}
+                              style={{
+                                objectFit: "scale-down",
+                                width: "50%",
+                                height: "50%",
+                              }}
+                            />
+                            <div className="card-body pb-0">
+                              <h5>{stackItem.title}</h5>
+                            </div>
                           </div>
-                        </div>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </div>
                 </div>
               </div>
             </div>

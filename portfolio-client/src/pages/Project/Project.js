@@ -2,167 +2,187 @@ import React, { useState } from "react";
 import "./Project.css";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { Modal, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const [projectName, setProjectName] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [videoUrl, setVideoUrl] = useState("");
+  const [code, setCodeUrl] = useState("");
 
-  const handleOpenModal = (url, name) => {
+  const handleOpenModal = (url, name, code) => {
     setVideoUrl(url);
     setProjectName(name);
+    setCodeUrl(code);
     setShowModal(true);
   };
   const handleCloseModal = () => {
     setVideoUrl("");
     setShowModal(false);
+    setCodeUrl("");
   };
   return (
     <>
-      <div id="project_id" className="container my-5">
-        <div className="row">
-          <div className="m-3 main-div-class">
-            <h1 className="display-5 text-center">
+      <div className="project_main pt-2 pb-5">
+        <div id="project_id" className="container my-5">
+          <div className="row">
+            <div className="main-div-class">
+              <h2 className="display-5 my-5 stack__title text-uppercase mb-4 text-center">
+                Projects
+                <span className="align-top p-1 m-1 icon_about">
+                  <AiOutlineFundProjectionScreen />
+                </span>
+              </h2>
+              {/* <h1 className="display-5 text-center">
               Projects{" "}
               <span className="align-top p-1 m-1 icon_about">
                 {" "}
                 <AiOutlineFundProjectionScreen />
               </span>
-            </h1>
-          </div>
-          <div className="col-md-4 ">
-            <span className="top_badge__style badge__style_color">
-              Full Stack{" "}
-            </span>
-            <div className="card card__style ">
-              <img
-                src={require("../../images/blog.png")}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h3 className="card-title">BlogBooth</h3>
-                <p>
-                  <span className="badge__style badge__color">React JS</span>
-                  <span className="badge__style badge__color">Express Js</span>
-                  <span className="badge__style badge__color">MongoDB</span>
-                  <span className="badge__style badge__color">Bootstrap</span>
-                </p>
-                <p className="card-text">
-                  Built BlogBooth with MERN stack, featuring admin dashboard,
-                  user authentication, account creation, blog posting, and
-                  advanced functionalities like filtering and searching for an
-                  enhanced user experience.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v2.mp4"),
-                        "BlogBooth"
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
+            </h1> */}
+            </div>
+            <div className="col-md-4 ">
+              <span className="top_badge__style badge__style_color">
+                Full Stack{" "}
+              </span>
+              <div className="card card__style ">
+                <img
+                  src={require("../../images/blog.png")}
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">BlogBooth</h3>
+                  <p>
+                    <span className="badge__style badge__color">React JS</span>
+                    <span className="badge__style badge__color">
+                      Express Js
+                    </span>
+                    <span className="badge__style badge__color">MongoDB</span>
+                    <span className="badge__style badge__color">Bootstrap</span>
+                  </p>
+                  <p className="card-text">
+                    Built BlogBooth with MERN stack, featuring admin dashboard,
+                    user authentication, account creation, blog posting, and
+                    advanced functionalities like filtering and searching for an
+                    enhanced user experience.
+                  </p>
+                  <div className="d-grid gap-2 col-12 mx-auto">
+                    <button
+                      className="btn btn-primary btn_color_pink"
+                      type="button"
+                      onClick={() =>
+                        handleOpenModal(
+                          require("../../images/v2.mp4"),
+                          "BlogBooth",
+                          "BlogBooth link"
+                        )
+                      }
+                    >
+                      Watch Video
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4">
-            <span className="top_badge__style badge__style_color">
-              MERN Stack
-            </span>
-            <div className="card card__style">
-              <img
-                src={require("../../images/ecommerce.jpg")}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h3 className="card-title">E-Commerce </h3>
-                <p>
-                  <span className="badge__style badge__color">React JS</span>
-                  <span className="badge__style badge__color">Redux</span>
-                  <span className="badge__style badge__color">MongoDB</span>
-                  <span className="badge__style badge__color">Express Js</span>
-                </p>
-                <p className="card-text">
-                  Developed an MERN E-commerce site with admin dashboard for
-                  product management, user authentication, account creation,
-                  cart functionality, seamless payment, and advanced features
-                  like filtering and searching.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "E-Commerce "
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
+            <div className="col-md-4">
+              <span className="top_badge__style badge__style_color">
+                MERN Stack
+              </span>
+              <div className="card card__style">
+                <img
+                  src={require("../../images/ecommerce.jpg")}
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">E-Commerce </h3>
+                  <p>
+                    <span className="badge__style badge__color">React JS</span>
+                    <span className="badge__style badge__color">Redux</span>
+                    <span className="badge__style badge__color">MongoDB</span>
+                    <span className="badge__style badge__color">
+                      Express Js
+                    </span>
+                  </p>
+                  <p className="card-text">
+                    Developed an MERN E-commerce site with admin dashboard for
+                    product management, user authentication, account creation,
+                    cart functionality, seamless payment, and advanced features
+                    like filtering and searching.
+                  </p>
+                  <div className="d-grid gap-2 col-12 mx-auto">
+                    <button
+                      className="btn btn-primary btn_color_pink"
+                      type="button"
+                      onClick={() =>
+                        handleOpenModal(
+                          require("../../images/v1.mp4"),
+                          "E-Commerce ",
+                          "E-Commerce Link "
+                        )
+                      }
+                    >
+                      Watch Video
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-4 ">
-            <span className="top_badge__style badge__style_color">
-              MERN Stack
-            </span>
-            <div className="card card__style">
-              <img
-                src={require("../../images/portfolio.png")}
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h3 className="card-title">Expense Management</h3>
-                <p>
-                  <span className="badge__style badge__color">Express Js</span>
-                  {/* <span className="badge__style badge__color">MongoDB</span> */}
-                  <span className="badge__style badge__color">
-                    Ant Design UI
-                  </span>
-                  <span className="badge__style badge__color">React JS</span>
-                </p>
-                <p className="card-text">
-                  Crafted a MERN Expense Management site with user
-                  authentication, account creation, and features enabling users
-                  to record, track incomes and expenses, and analyze data within
-                  custom date ranges.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  {/* <button
+            <div className="col-md-4 ">
+              <span className="top_badge__style badge__style_color">
+                MERN Stack
+              </span>
+              <div className="card card__style">
+                <img
+                  src={require("../../images/portfolio.png")}
+                  className="card-img-top"
+                  alt="..."
+                />
+                <div className="card-body">
+                  <h3 className="card-title">Expense Management</h3>
+                  <p>
+                    <span className="badge__style badge__color">
+                      Express Js
+                    </span>
+                    {/* <span className="badge__style badge__color">MongoDB</span> */}
+                    <span className="badge__style badge__color">
+                      Ant Design UI
+                    </span>
+                    <span className="badge__style badge__color">React JS</span>
+                  </p>
+                  <p className="card-text">
+                    Crafted a MERN Expense Management site with user
+                    authentication, account creation, and features enabling
+                    users to record, track incomes and expenses, and analyze
+                    data within custom date ranges.
+                  </p>
+                  <div className="d-grid gap-2 col-12 mx-auto">
+                    {/* <button
                     className="btn btn-primary btn_color_pink"
                     type="button"
                   >
                     Button
                   </button> */}
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "MERN Todo"
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
+                    <button
+                      className="btn btn-primary btn_color_pink"
+                      type="button"
+                      onClick={() =>
+                        handleOpenModal(
+                          require("../../images/v1.mp4"),
+                          "MERN Todo",
+                          "https://mern-todo.netlify.app/"
+                        )
+                      }
+                    >
+                      Watch Video
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          {/* ==================three card end ================ */}
-          {/* <div className="col-md-4">
+            {/* ==================three card end ================ */}
+            {/* <div className="col-md-4">
             <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" >
               <img
@@ -280,6 +300,7 @@ const Project = () => {
             </div>
           </div>
           ==================three card end ================ */}
+          </div>
         </div>
       </div>
       <Modal
@@ -288,7 +309,7 @@ const Project = () => {
         size="lg"
         className="model__style"
       >
-        <div className="card__style">
+        <div className="card__style-modal">
           <Modal.Header closeButton>
             <Modal.Title>{projectName} Video</Modal.Title>
           </Modal.Header>
@@ -299,6 +320,12 @@ const Project = () => {
             </video>
           </Modal.Body>
           <Modal.Footer className="mt-0 mx-auto">
+            <Link
+              className="btn btn-primary btn_color_pink_close w-25 align-items-center"
+              to={code}
+            >
+              GitHub Code
+            </Link>
             <Button
               className="btn btn-primary btn_color_pink_close w-25 align-items-center"
               // variant="secondary"

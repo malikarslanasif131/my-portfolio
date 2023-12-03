@@ -55,75 +55,77 @@ const Contact = () => {
   return (
     <>
       {/* <ContactUs /> */}
-      <ToastContainer />
-      <div
-        id="contact_id"
-        className="container contact__section  my-5 custom__mt-7rem"
-      >
-        <div className="row my-5">
-          <div className="mt-5 mb-3">
-            <h1 className="display-5 text-center ">
-              Contact Me!
-              <span className="align-top p-1 m-1 icon_about">
-                {" "}
-                <BiSolidContact />
-              </span>
-            </h1>
-          </div>
-          <div className="col-md-4 offset-1 contact-us-custom-col">
-            <div className="m-auto image_round">
-              <img
-                className="image__round contact__image"
-                // src={require("../../images/contact-us.jpg")}
-                src={require("../../images/contact-300x218.png")}
-                // width={350}
-                // height={300}
-                alt="Logo"
-              />
+      <div className=" my-5">
+        <ToastContainer />
+        <div
+          id="contact_id"
+          className="container contact__section  my-5 custom__mt-7rem"
+        >
+          <div className="row my-5">
+            <div className="mt-5 mb-3">
+              <h1 className="display-5 text-center ">
+                Contact <span className="text-custom-Color-org">Me!</span>
+                <span className="align-top p-1 m-1 icon_about">
+                  {" "}
+                  <BiSolidContact />
+                </span>
+              </h1>
             </div>
-          </div>
-          <div className="col-md-6 mx-auto">
-            <form className="contact-form">
-              <div className="mb-3">
-                <input
-                  className="form-control form-control-lg"
-                  type="text"
-                  name="name"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  placeholder="Enter Your Name..."
+            {/* <div className="col-md-4 offset-1 contact-us-custom-col">
+              <div className="m-auto image_round">
+                <img
+                  className="image__round contact__image"
+                  // src={require("../../images/contact-us.jpg")}
+                  src={require("../../images/contact-300x218.png")}
+                  // width={350}
+                  // height={300}
+                  alt="Logo"
                 />
               </div>
-              <div className="mb-3">
-                <input
-                  type="email"
-                  className="form-control form-control-lg"
-                  placeholder="Enter Your Email..."
-                  name="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-              </div>
-              <div className="mb-3">
-                <textarea
-                  className="form-control form-control-lg"
-                  placeholder="Massage Here ..."
-                  rows="2"
-                  name="message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
-                ></textarea>
-              </div>
-              <div className="d-grid gap-2 col-12 mx-auto">
-                <button
-                  type="submit"
-                  className="btn btn-primary btn_color_pink "
-                  onClick={handleSubmit}
-                >
-                  Submit
-                </button>
-              </div>
-            </form>
+            </div> */}
+            <div className="col-md-6 mx-auto mb-5">
+              <form className="contact-form">
+                <div className="mb-3">
+                  <input
+                    className="form-control form-control-lg"
+                    type="text"
+                    name="name"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                    placeholder="Enter Your Name..."
+                  />
+                </div>
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    className="form-control form-control-lg"
+                    placeholder="Enter Your Email..."
+                    name="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className="mb-3">
+                  <textarea
+                    className="form-control form-control-lg"
+                    placeholder="Massage Here ..."
+                    rows="2"
+                    name="message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
+                </div>
+                <div className="d-grid gap-2 col-12 mx-auto">
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn_color_custom "
+                    onClick={handleSubmit}
+                  >
+                    Submit
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
