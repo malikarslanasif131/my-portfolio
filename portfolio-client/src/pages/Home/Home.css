@@ -1,6 +1,10 @@
 .image_round {
   border-radius: 50%;
 }
+.class-sm-sec-btn {
+  z-index: 99999;
+  position: absolute;
+}
 
 .bg__color__white {
   /* background-color: #e6e5e5d0; */
