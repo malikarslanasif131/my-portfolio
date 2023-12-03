@@ -171,7 +171,7 @@ const Project = () => {
                         handleOpenModal(
                           require("../../images/v1.mp4"),
                           "MERN Todo",
-                          "/mern-todo"
+                          "/mern-todo 1"
                         )
                       }
                     >
