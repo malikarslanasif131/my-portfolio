@@ -99,7 +99,7 @@ const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 type="button"
-                className="btn btn-lg mx-3 px-3 pb-2"
+                className="btn btn-lg mx-3 px-3 pb-2 btn-wp"
               >
                 <IoLogoWhatsapp size={32} className="custom_bg_color_wp" />
               </a>

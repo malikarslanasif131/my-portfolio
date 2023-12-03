@@ -102,7 +102,10 @@
   }
 
   .class-sm-sec-btn {
-    margin-top: 1rem !important;
+    margin-top: 1.5rem !important;
+  }
+  .btn-wp {
+    display: none !important;
   }
 
   .class-sm-sec-btn a {

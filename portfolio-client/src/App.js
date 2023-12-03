@@ -44,12 +44,12 @@ function App() {
         outerAlpha={0}
         // hasBlendMode={true}
         innerStyle={{
-          backgroundColor: "#3979ef",
+          backgroundColor: "#da712c",
           zIndex: "9999",
           transition: "none",
         }}
         outerStyle={{
-          border: "3px solid #3979ef",
+          border: "4px solid #da712c",
           zIndex: "9999",
           transition: "none",
         }}

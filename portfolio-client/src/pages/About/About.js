@@ -17,7 +17,7 @@ const About = () => {
           {/* <div className='text-center display-4 about__title text-uppercase my-3'>About Me</div> */}
           <div className="row my-5">
             {/* First Column for about__cards */}
-            <div className="col-md-4 pt-5">
+            <div className="col-md-4 pt-5 about-card-cards">
               <div className="about__cards">
                 <article className="card text-dark text-center custom_width_150 p-3 first-about-card">
                   <span className="py-3">
@@ -43,7 +43,7 @@ const About = () => {
               </div>
             </div>
             {/* Second Column for details card */}
-            <div className="col-md-8 m-auto about__card">
+            <div className="col-md-8 col-sm-12 m-auto about__card">
               <div className="text-center display-5 about__title text-uppercase mb-4 ">
                 {text}
                 <span className="align-top p-1 m-1 icon_about">

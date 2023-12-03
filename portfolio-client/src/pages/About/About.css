@@ -170,4 +170,7 @@
   .first-about-card {
     width: 250px !important;
   }
+  .about-card-cards {
+    display: none;
+  }
 }
