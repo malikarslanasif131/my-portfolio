@@ -171,7 +171,7 @@ const Project = () => {
                         handleOpenModal(
                           require("../../images/v1.mp4"),
                           "MERN Todo",
-                          "https://mern-todo.netlify.app/"
+                          "/mern-todo"
                         )
                       }
                     >
