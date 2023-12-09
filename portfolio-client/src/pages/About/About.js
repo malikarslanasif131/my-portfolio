@@ -80,6 +80,33 @@ const About = () => {
                     Read More
                   </a>
                 </div>
+                {/* For only Small screens  */}
+                <div className=" about-card-cards-sm">
+                  <div className="about__cards">
+                    <article className="card text-dark text-center custom_width_150 p-3 pb-2 first-about-card">
+                      <span className="py-1">
+                        <HiBadgeCheck size={25} />
+                      </span>
+                      <h3>3+</h3>
+                      <small>YEAR OF EXPERIENCE</small>
+                    </article>
+                    <article className="card text-dark text-center custom_width_150 p-3 pb-2">
+                      <span className="py-1">
+                        <VscProject size={25} />
+                      </span>
+                      <h3>20+ </h3>
+                      <small>PROJECTS</small>
+                    </article>
+                    <article className="card text-dark text-center custom_width_150 p-3 pb-2">
+                      <span className="py-1">
+                        <FaLaptopCode size={25} />
+                      </span>
+                      <h3>40k+</h3>
+                      <small>LINES OF CODE</small>
+                    </article>
+                  </div>
+                </div>
+                {/* For only Small screens  */}
               </div>
             </div>
           </div>

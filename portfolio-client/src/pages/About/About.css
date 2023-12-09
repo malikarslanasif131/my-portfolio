@@ -128,6 +128,9 @@
   box-shadow: 0 0 0.5rem #da712c;
   /*  */
 }
+.about-card-cards-sm {
+  display: none;
+}
 
 @media (max-width: 768px) {
   .about__cards {
@@ -135,6 +138,9 @@
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  .about-card-cards-sm {
+    display: block !important;
+  }
   .about__card {
     padding: 1rem !important;
   }
@@ -165,10 +171,16 @@
   }
   .custom_width_150 {
     width: 150px !important;
-    font-size: 16px;
+    font-size: 14px;
+    transform: scale(0.9);
+    background: linear-gradient(to bottom right, #e1620ca1, #d5093599);
+    color: #ffffffcc !important;
+    border: 1px solid #da712c;
+    box-shadow: 0 0 0.5rem #da712c;
   }
   .first-about-card {
     width: 250px !important;
+    transform: scale(0.9);
   }
   .about-card-cards {
     display: none;
@@ -179,5 +191,8 @@
   .about__card {
     max-width: 100%;
     min-width: 95%;
+  }
+  .btn-readmore {
+    display: none !important;
   }
 }
