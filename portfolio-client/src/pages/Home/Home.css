@@ -32,7 +32,7 @@
   padding: 0.6rem 1.5rem;
   background: #da712c;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem #da712c;
+  /* box-shadow: 0 0 1rem #da712c; */
   font-size: 1.2rem;
   color: #323946;
   letter-spacing: 0.1rem;
@@ -80,16 +80,20 @@
 @media (min-width: 320px) and (max-width: 768px) {
   .home__section {
     padding-bottom: 2px !important;
+    height: 70vh;
   }
 
   .class-sm-imgdiv {
     text-align: center;
   }
+  .col-md-5 {
+    margin-top: 25px;
+  }
 
   .class-sm-img {
     margin: 0 !important;
-    width: 40% !important;
-    height: 40% !important;
+    width: 45% !important;
+    height: 45% !important;
   }
 
   .class-sm-sec-two {
@@ -107,6 +111,7 @@
 
   .class-sm-sec-btn {
     margin-top: 1.5rem !important;
+    width: 100%;
   }
   .btn-wp {
     display: none !important;

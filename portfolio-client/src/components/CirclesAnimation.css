@@ -137,4 +137,7 @@
   .hide-mobile {
     display: none !important;
   }
+  .circles {
+    height: 70vh;
+  }
 }

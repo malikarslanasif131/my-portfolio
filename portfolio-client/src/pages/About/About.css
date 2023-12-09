@@ -173,4 +173,11 @@
   .about-card-cards {
     display: none;
   }
+  .about_main.p-5 {
+    padding: 0 !important;
+  }
+  .about__card {
+    max-width: 100%;
+    min-width: 95%;
+  }
 }
