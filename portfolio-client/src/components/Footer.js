@@ -22,7 +22,7 @@ const Footer = () => {
                   className="li_circle m-auto d-flex align-items-center  text-dark"
                   to="https://web.facebook.com/malikarslan.asif"
                 >
-                  <SiFacebook size={25} className="text-center" />
+                  <SiFacebook size={22} className="text-center" />
                 </Link>
               </li>
               {/* <li className="ms-4  ">
@@ -38,7 +38,7 @@ const Footer = () => {
                   className="li_circle m-auto d-flex align-items-center text-dark"
                   to="https://github.com/malikarslanasif131"
                 >
-                  <SiGithub size={25} />
+                  <SiGithub size={22} />
                 </Link>
               </li>
               <li className="ms-4  ">
@@ -46,7 +46,7 @@ const Footer = () => {
                   className="li_circle m-auto d-flex align-items-center text-dark "
                   to="https://www.linkedin.com/in/malikarslanasif131"
                 >
-                  <SiLinkedin size={25} />
+                  <SiLinkedin size={22} />
                 </Link>
               </li>
             </ul>

@@ -7,7 +7,7 @@ import { GiStack } from "react-icons/gi";
 const Testimonials = () => {
   return (
     <>
-      <div id="testimonial_id" className="container my-5">
+      <div id="testimonial_id" className="container my-5 pt-3">
         <div className="row">
           <div className="mb-2">
             <h2 className="display-5 stack__title text-uppercase mb-4 text-center">
@@ -24,7 +24,7 @@ const Testimonials = () => {
               </span>
             </h1> */}
           </div>
-          <div className="col-md-4 ">
+          <div className="col-md-4 testimonal-section-card">
             <div className="card text-center py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
@@ -64,7 +64,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4 ">
+          <div className="col-md-4 testimonal-section-card">
             <div className="card text-center  py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
@@ -105,7 +105,7 @@ const Testimonials = () => {
               </div>
             </div>
           </div>{" "}
-          <div className="col-md-4 ">
+          <div className="col-md-4 testimonal-section-card">
             <div className="card text-center  py-3 card-style-testimonial  my-3">
               <img
                 // src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp"

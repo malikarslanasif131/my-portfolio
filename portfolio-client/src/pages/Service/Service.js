@@ -31,7 +31,7 @@ const Service = () => {
                     <FaCode className="icon-style" size={60} color="#da712c" />
                   </div>
                   <h3 className="pt-2">Full-Stack Development</h3>
-                  <p className="px-3 text-center mt-3">
+                  <p className="px-3 text-center mt-3 text-muted">
                     Maximize web solutions with my full-stack development.
                     Dynamic frontends using React.js/Next.js, robust backends
                     with Node.js/PHP. Elevate web presence with MERN stack
@@ -55,7 +55,7 @@ const Service = () => {
                     />
                   </div>
                   <h3 className="pt-2">CMS Drupal Expertise</h3>
-                  <p className="px-3 text-center mt-3">
+                  <p className="px-3 text-center mt-3 text-muted">
                     Customize your CMS to meet unique needs. As a Drupal expert,
                     I create fully functional websites from scratch, integrating
                     custom modules for enhanced functionality and seamless
@@ -79,7 +79,7 @@ const Service = () => {
                     />
                   </div>
                   <h3 className="pt-2">Responsive Web</h3>
-                  <p className="px-3 text-center mt-3">
+                  <p className="px-3 text-center mt-3 text-muted">
                     Craft websites with responsive design, ensuring optimal
                     viewing across various devices. Enhance user experience and
                     accessibility by adapting seamlessly to different screen

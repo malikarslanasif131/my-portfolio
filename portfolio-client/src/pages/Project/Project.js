@@ -53,7 +53,7 @@ const Project = () => {
                 />
                 <div className="card-body">
                   <h3 className="card-title">BlogBooth</h3>
-                  <p>
+                  <p className="badge-section-css">
                     <span className="badge__style badge__color">React JS</span>
                     <span className="badge__style badge__color">
                       Express Js
@@ -61,7 +61,7 @@ const Project = () => {
                     <span className="badge__style badge__color">MongoDB</span>
                     <span className="badge__style badge__color">Bootstrap</span>
                   </p>
-                  <p className="card-text">
+                  <p className="card-text text-muted">
                     Built BlogBooth with MERN stack, featuring admin dashboard,
                     user authentication, account creation, blog posting, and
                     advanced functionalities like filtering and searching for an
@@ -97,7 +97,7 @@ const Project = () => {
                 />
                 <div className="card-body">
                   <h3 className="card-title">E-Commerce </h3>
-                  <p>
+                  <p className="badge-section-css">
                     <span className="badge__style badge__color">React JS</span>
                     <span className="badge__style badge__color">Redux</span>
                     <span className="badge__style badge__color">MongoDB</span>
@@ -105,7 +105,7 @@ const Project = () => {
                       Express Js
                     </span>
                   </p>
-                  <p className="card-text">
+                  <p className="card-text text-muted">
                     Developed an MERN E-commerce site with admin dashboard for
                     product management, user authentication, account creation,
                     cart functionality, seamless payment, and advanced features
@@ -141,7 +141,7 @@ const Project = () => {
                 />
                 <div className="card-body">
                   <h3 className="card-title">Expense Management</h3>
-                  <p>
+                  <p className="badge-section-css">
                     <span className="badge__style badge__color">
                       Express Js
                     </span>
@@ -151,7 +151,7 @@ const Project = () => {
                     </span>
                     <span className="badge__style badge__color">React JS</span>
                   </p>
-                  <p className="card-text">
+                  <p className="card-text text-muted">
                     Crafted a MERN Expense Management site with user
                     authentication, account creation, and features enabling
                     users to record, track incomes and expenses, and analyze

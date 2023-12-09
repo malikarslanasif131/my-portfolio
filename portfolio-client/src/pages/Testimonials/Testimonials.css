@@ -25,6 +25,7 @@
     font-size: 13px;
     min-height: 500px;
     margin: auto;
+    border: 1px solid #da712c;
   }
 
   .testi-img {
@@ -35,5 +36,9 @@
   .card-body h5 {
     margin-bottom: 5px;
     font-size: medium;
+  }
+  .testimonal-section-card {
+    max-width: 100%;
+    margin: auto;
   }
 }
