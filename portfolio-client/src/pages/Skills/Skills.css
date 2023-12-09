@@ -60,8 +60,11 @@ to bottom right,
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
-  .skill__styles {
+  .skills_main {
     padding: 10px !important;
+  }
+  .skill__styles {
+    padding: 18px !important;
   }
   .stack__title {
     font-size: 28px;

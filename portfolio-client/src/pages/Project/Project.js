@@ -41,7 +41,7 @@ const Project = () => {
               </span>
             </h1> */}
             </div>
-            <div className="col-md-4 ">
+            <div className="col-md-4 project-card-size ">
               <span className="top_badge__style badge__style_color">
                 Full Stack{" "}
               </span>
@@ -85,7 +85,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 project-card-size">
               <span className="top_badge__style badge__style_color">
                 MERN Stack
               </span>
@@ -129,7 +129,7 @@ const Project = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4 ">
+            <div className="col-md-4 project-card-size ">
               <span className="top_badge__style badge__style_color">
                 MERN Stack
               </span>
@@ -182,7 +182,7 @@ const Project = () => {
               </div>
             </div>
             {/* ==================three card end ================ */}
-            {/* <div className="col-md-4">
+            {/* <div className="col-md-4 project-card-size">
             <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" >
               <img
@@ -221,7 +221,7 @@ const Project = () => {
               </div>
             </div>
           </div>{" "}
-          <div className="col-md-4">
+          <div className="col-md-4 project-card-size">
             <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" >
               <img
@@ -260,7 +260,7 @@ const Project = () => {
               </div>
             </div>
           </div>{" "}
-          <div className="col-md-4">
+          <div className="col-md-4 project-card-size">
             <span className="top_badge__style badge__color">MERN Stack</span>
             <div className="card card__style" >
               <img

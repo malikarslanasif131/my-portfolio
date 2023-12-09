@@ -62,7 +62,7 @@
   padding: 0.6rem 1.5rem;
   background: #da712c;
   border-radius: 4rem;
-  box-shadow: 0 0 1rem #da712c;
+  /* box-shadow: 0 0 0.4rem #da712c; */
   font-size: 1.2rem;
   color: #323946;
   letter-spacing: 0.1rem;
@@ -77,15 +77,44 @@
 .btn-readmore:hover {
   color: #323946 !important;
 }
-
+.color_custom_text-edu {
+  font-size: medium;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
 @media (min-width: 320px) and (max-width: 768px) {
+  .service_main {
+    padding: 18px !important;
+  }
+  .service-box {
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+  .service-box p {
+    font-size: 0.9rem;
+  }
+  .btn-readmore {
+    font-size: 0.9rem;
+  }
   .icon-style {
     width: 50px;
   }
-
+  .icon_back_style h3 {
+    margin-bottom: 0;
+  }
   .bg-custom-Color {
     height: auto !important;
     padding-top: 20px;
     padding-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #da712c;
+  }
+  .education__title {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .color_custom_text-edu {
+    letter-spacing: 2px;
+    word-spacing: 2px;
   }
 }

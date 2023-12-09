@@ -19,7 +19,7 @@ const Service = () => {
                 <MdOutlineElectricalServices />
               </span>
             </h2>
-            <h4 className="pb-3 color_custom_text">
+            <h4 className="pb-3 color_custom_text-edu">
               I do amazing things for clients
             </h4>
 
@@ -37,7 +37,7 @@ const Service = () => {
                     with Node.js/PHP. Elevate web presence with MERN stack
                     expertise.
                   </p>
-                  <div className="my-3 ">
+                  <div className="mt-3 ">
                     <a href="#" className="mb-3 btn-readmore">
                       Read More
                     </a>
@@ -61,7 +61,7 @@ const Service = () => {
                     custom modules for enhanced functionality and seamless
                     operation.
                   </p>
-                  <div className="my-3 ">
+                  <div className="mt-3 ">
                     <a href="#" className="mb-3 btn-readmore">
                       Read More
                     </a>
@@ -85,7 +85,7 @@ const Service = () => {
                     accessibility by adapting seamlessly to different screen
                     sizes.
                   </p>
-                  <div className="my-3 ">
+                  <div className="mt-3 ">
                     <a href="#" className="mb-3 btn-readmore">
                       Read More
                     </a>
