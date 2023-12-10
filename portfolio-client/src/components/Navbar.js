@@ -30,6 +30,14 @@ const Navbar = () => {
         top: targetScrollPosition,
         behavior: "smooth",
       });
+      // Close the mobile menu
+      const navbarToggler = document.querySelector(".navbar-toggler");
+      const navbarCollapse = document.querySelector(".navbar-collapse");
+
+      if (navbarToggler && navbarCollapse) {
+        navbarToggler.classList.add("collapsed");
+        navbarCollapse.classList.remove("show");
+      }
     }
   };
 
@@ -61,57 +69,74 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  window.onscroll = function () {
+    const stickyElement = document.querySelector(".sticky-top-top");
+
+    // Change the value based on your requirements
+    const scrollOffset = window.scrollY;
+
+    // Check if the scroll offset is greater than a certain value
+    if (scrollOffset > 20) {
+      // Apply the new top value when scrolling down
+      stickyElement.style.top = "20px";
+    } else {
+      // Reset the top value when scrolling up
+      stickyElement.style.top = "0";
+    }
+  };
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light sticky-top nav__style">
-        <div className="container-fluid">
-          <a
-            className="navbar-brand custom_nav_brand px-5 pb-0 text-light "
-            href="/"
-          >
-            {/* &lt; Malik Arslan Asif /&gt; */}
-            <img
-              // src={require("../images/arslogo.png")}
-              src={require("../images/pinklogo-bg.png")}
-              // src={require("../images/download.gif")}
-              style={{
-                objectFit: "scale-down",
-                width: "50%",
-                height: "50%",
-              }}
-              alt="logo"
-            />
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav ms-auto p-2 letter__spacing">
-              {sections.map((section) => (
-                <NavLink
-                  key={section.id}
-                  className={`nav-link text__pink me-3 ${
-                    activeSection === section.id ? "nav__active" : ""
-                  }`}
-                  to={`#${section.id}`}
-                  onClick={(e) => handleLinkClick(e, section.id)}
-                >
-                  {section.name}
-                </NavLink>
-              ))}
+      <div className="sticky-top-top">
+        <nav className="navbar navbar-expand-lg navbar-light sticky-top nav__style">
+          <div className="container-fluid">
+            <a
+              className="navbar-brand custom_nav_brand px-5 pb-0 text-light "
+              href="/"
+            >
+              {/* &lt; Malik Arslan Asif /&gt; */}
+              <img
+                // src={require("../images/arslogo.png")}
+                src={require("../images/pinklogo-bg.png")}
+                // src={require("../images/download.gif")}
+                style={{
+                  objectFit: "scale-down",
+                  width: "50%",
+                  height: "50%",
+                }}
+                alt="logo"
+              />
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav ms-auto p-2 letter__spacing">
+                {sections.map((section) => (
+                  <NavLink
+                    key={section.id}
+                    className={`nav-link text__pink me-3 ${
+                      activeSection === section.id ? "nav__active" : ""
+                    }`}
+                    to={`#${section.id}`}
+                    onClick={(e) => handleLinkClick(e, section.id)}
+                  >
+                    {section.name}
+                  </NavLink>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </>
   );
 };

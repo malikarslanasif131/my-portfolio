@@ -134,7 +134,7 @@
 
 @media (max-width: 768px) {
   .about__cards {
-    gap: 20px;
+    /* gap: 20px; */
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
@@ -167,7 +167,7 @@
   }
 
   .about__cards {
-    gap: 20px;
+    gap: 0px;
   }
   .custom_width_150 {
     width: 150px !important;

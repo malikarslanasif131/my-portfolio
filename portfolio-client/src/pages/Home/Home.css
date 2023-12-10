@@ -80,7 +80,12 @@
 @media (min-width: 320px) and (max-width: 768px) {
   .home__section {
     padding-bottom: 2px !important;
-    height: 70vh;
+    /* height: 70vh; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .class-sm-imgdiv {
