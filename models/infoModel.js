@@ -3,6 +3,9 @@ import mongoose from "mongoose";
 
 const clientInfoSchema = new mongoose.Schema(
   {
+    dateTime: {
+      type: String,
+    },
     ipAddress: {
       type: String,
     },

@@ -6,6 +6,7 @@ import Typewriter from "typewriter-effect";
 import { useWindupString } from "windups";
 import { IoLogoWhatsapp } from "react-icons/io";
 import CirclesAnimation from "../../components/CirclesAnimation";
+import axios from "axios";
 const Home = () => {
   const [text] = useWindupString("Malik Arslan Asif");
 
@@ -17,6 +18,35 @@ const Home = () => {
   const contactLink = "www.linkedin.com/in/malikarslanasif131";
   // const resumefile = "www.linkedin.com/in/malikarslanasif131";
   const phoneNo = "+923115115143";
+
+  const getDownloadClientInfo = async (click) => {
+    try {
+      console.log("Before fetch");
+      const response = await fetch("https://api.ipify.org?format=json");
+      const { ip } = await response.json();
+      console.log("After fetch");
+      const downloadInfo = {
+        click: click,
+        ipAddress: ip,
+        userAgent: navigator.userAgent,
+        platform: navigator.platform,
+        screenWidth: window.screen.width,
+        screenHeight: window.screen.height,
+      };
+      console.log("Download info:", downloadInfo);
+      // Send the client information to the server using axios
+
+      await axios.post("api/checkDownload", downloadInfo, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+
+      console.log("Client information sent to the server:", downloadInfo);
+    } catch (error) {
+      console.error("Error While fetching or updating information:", error);
+    }
+  };
 
   return (
     <>
@@ -82,6 +112,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 type="button"
                 className="btn btn-lg btn-home-colors px-3 me-3"
+                onClick={() => getDownloadClientInfo("Hire Me")}
               >
                 Hire Me!
               </a>
@@ -91,6 +122,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 type="button"
                 className="btn btn-lg btn-home-colors px-3 ms-3 "
+                onClick={() => getDownloadClientInfo("Resume")}
               >
                 Resume
               </a>
@@ -100,6 +132,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 type="button"
                 className="btn btn-lg mx-3 px-3 pb-2 btn-wp"
+                onClick={() => getDownloadClientInfo("Whatsapp")}
               >
                 <IoLogoWhatsapp size={32} className="custom_bg_color_wp" />
               </a>

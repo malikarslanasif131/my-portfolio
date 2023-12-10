@@ -18,6 +18,7 @@ const app = express();
 //import route
 import contactRoutes from "./routes/contactRoutes.js";
 import infoRoutes from "./routes/infoRoutes.js";
+import downloadRoutes from "./routes/downloadRoutes.js";
 
 //config connect
 dotenv.config();
@@ -33,6 +34,7 @@ app.use(express.static(path.join(__dirname, "./portfolio-client/build")));
 
 app.use("/api/contact", contactRoutes);
 app.use("/api/saveClientInfo", infoRoutes);
+app.use("/api/checkDownload", downloadRoutes);
 
 app.get("/api/test", (req, res) => {
   res.send("Hello from the Express server and test middleware!");

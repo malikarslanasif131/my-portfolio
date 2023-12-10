@@ -6,12 +6,26 @@ import { Routes, Route } from "react-router-dom";
 // import CustomCursor from "./components/CustomCursor";
 import AnimatedCursor from "react-animated-cursor";
 function App() {
+  function getCustomDateTime() {
+    const options = {
+      weekday: "long", // full day name (e.g., Monday)
+      day: "numeric", // day of the month (e.g., 30)
+      month: "long", // full month name (e.g., September)
+      hour: "numeric", // hours (e.g., 01)
+      minute: "numeric", // minutes (e.g., 30)
+      hour12: true, // use 12-hour clock format
+    };
+
+    const now = new Date();
+    return now.toLocaleString("en-US", options);
+  }
   const getClientInfo = async () => {
     try {
       const response = await fetch("https://api.ipify.org?format=json");
       const { ip } = await response.json();
 
       const browserInfo = {
+        dateTime: getCustomDateTime(),
         ipAddress: ip,
         userAgent: navigator.userAgent,
         platform: navigator.platform,
@@ -23,7 +37,7 @@ function App() {
 
       await axios.post("api/saveClientInfo", browserInfo);
 
-      // console.log("Client information sent to the server:", browserInfo);
+      console.log("Client information sent to the server:", browserInfo);
     } catch (error) {
       // console.error("Error fetching client information:", error);
     }
