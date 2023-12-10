@@ -73,9 +73,9 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/v2.mp4"),
+                          require("../../images/blogbooth.mp4"),
                           "BlogBooth",
-                          "BlogBooth link"
+                          "https://github.com/malikarslanasif131/mern-blogBooth"
                         )
                       }
                     >
@@ -117,9 +117,9 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/v1.mp4"),
+                          require("../../images/ecom.mp4"),
                           "E-Commerce ",
-                          "E-Commerce Link "
+                          "https://github.com/malikarslanasif131/mern-ecommerce"
                         )
                       }
                     >
@@ -169,9 +169,9 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/v1.mp4"),
+                          require("../../images/expen.mp4"),
                           "MERN Todo",
-                          "/mern-todo 1"
+                          "https://github.com/malikarslanasif131/mern-expenses"
                         )
                       }
                     >
@@ -324,7 +324,7 @@ const Project = () => {
               className="btn btn-primary btn_color_pink_close w-25 align-items-center"
               to={code}
             >
-              GitHub Code
+              Code
             </Link>
             <Button
               className="btn btn-primary btn_color_pink_close w-25 align-items-center"

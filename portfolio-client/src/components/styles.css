@@ -156,6 +156,9 @@
     top: 0;
     z-index: 999999;
   }
+  .sticky-top-top + .home__section {
+    padding-top: 60px;
+  }
   .navbar-toggler {
     /* color: #da712c !important; */
     background-color: #da712c;
@@ -166,7 +169,7 @@
     height: 400px;
     border: 1px solid #da712c;
     position: absolute;
-    top: 5vh;
+    top: 7vh;
     right: 3%;
     /* transition: right 0.5s; */
     background: #1f242d;
@@ -191,5 +194,10 @@
 
   .navbar-toggler.collapsed + .navbar-collapse {
     right: 0; 
+  }
+} */
+/* @media (min-width: 1000px) and (max-width: 1400px) {
+  body {
+    font-size: medium;
   }
 } */

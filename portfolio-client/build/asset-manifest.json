@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.292d29b1.css",
-    "main.js": "/static/js/main.41cd99cc.js",
+    "main.css": "/static/css/main.bde2fd06.css",
+    "main.js": "/static/js/main.eb606311.js",
     "static/js/787.7982a17c.chunk.js": "/static/js/787.7982a17c.chunk.js",
-    "static/media/v2.mp4": "/static/media/v2.4b6dd9084bfb17d67d5a.mp4",
-    "static/media/v1.mp4": "/static/media/v1.204cb3b787ac3c8ecbaa.mp4",
-    "static/media/Arslan_Asif_CV.pdf": "/static/media/Arslan_Asif_CV.928faa590f4f151e7122.pdf",
+    "static/media/blogbooth.mp4": "/static/media/blogbooth.09eb6cfba3cfe8e0abf7.mp4",
+    "static/media/ecom.mp4": "/static/media/ecom.0e04043bb273305895cb.mp4",
+    "static/media/expen.mp4": "/static/media/expen.cbadf59cf8ddad30715c.mp4",
     "static/media/my-profile.jpg": "/static/media/my-profile.8b46ebe206e7724bccc1.jpg",
     "static/media/portfolio.png": "/static/media/portfolio.138d05947b68ffe41bbd.png",
     "static/media/php.png": "/static/media/php.95a61c5c56b6407a8625.png",
+    "static/media/_Malik Arslan Asif_ --MERN -- Developer.pdf": "/static/media/_Malik Arslan Asif_ --MERN -- Developer.0884b2d9c82afd77851e.pdf",
     "static/media/ecommerce.jpg": "/static/media/ecommerce.a48c4bf83078a01d9a2f.jpg",
     "static/media/blog.png": "/static/media/blog.856182a82cd268866534.png",
     "static/media/mysql.png": "/static/media/mysql.60fe462b4dec8bbc0292.png",
@@ -26,12 +27,12 @@
     "static/media/jQuery.png": "/static/media/jQuery.347f93d8463ec15aa303.png",
     "static/media/testi1.jpg": "/static/media/testi1.c60e09d226f568ebe313.jpg",
     "index.html": "/index.html",
-    "main.292d29b1.css.map": "/static/css/main.292d29b1.css.map",
-    "main.41cd99cc.js.map": "/static/js/main.41cd99cc.js.map",
+    "main.bde2fd06.css.map": "/static/css/main.bde2fd06.css.map",
+    "main.eb606311.js.map": "/static/js/main.eb606311.js.map",
     "787.7982a17c.chunk.js.map": "/static/js/787.7982a17c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.292d29b1.css",
-    "static/js/main.41cd99cc.js"
+    "static/css/main.bde2fd06.css",
+    "static/js/main.eb606311.js"
   ]
 }

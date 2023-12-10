@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import logo from "../../images/my-profile.jpg";
-import resumefile from "../../images/Arslan_Asif_CV.pdf";
+import resumefile from "../../images/_Malik Arslan Asif_ --MERN -- Developer.pdf";
 import Typewriter from "typewriter-effect";
 import { useWindupString } from "windups";
 import { IoLogoWhatsapp } from "react-icons/io";
