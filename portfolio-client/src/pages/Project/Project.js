@@ -74,7 +74,7 @@ const Project = () => {
                       onClick={() =>
                         handleOpenModal(
                           // require("../../images/blogbooth.mp4"),
-                          "https://www.youtube.com/embed/G5_yUR_tCx0?si=B16p8av8aQFAc_9H",
+                          "https://www.youtube.com/embed/_5zDuC5DUXw?si=XjuJG_rvgis2NNY3",
                           "BlogBooth",
                           "https://github.com/malikarslanasif131/mern-blogBooth"
                         )
@@ -119,7 +119,7 @@ const Project = () => {
                       onClick={() =>
                         handleOpenModal(
                           // require("../../images/ecom.mp4"),
-                          "https://www.youtube.com/embed/vFVHpdiN88c?si=8SsUH0oVewu0d2mF",
+                          "https://www.youtube.com/embed/noXmOLl8KWQ?si=Id7qk8TU5KyLGSjx",
                           "E-Commerce ",
                           "https://github.com/malikarslanasif131/mern-ecommerce"
                         )
@@ -171,7 +171,8 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/expen.mp4"),
+                          // require("../../images/expen.mp4"),
+                          "https://www.youtube.com/embed/CTDnaGkuYbA?si=F_wSYYsgIK-HJMWa",
                           "MERN Todo",
                           "https://github.com/malikarslanasif131/mern-expenses"
                         )
@@ -184,124 +185,6 @@ const Project = () => {
               </div>
             </div>
             {/* ==================three card end ================ */}
-            {/* <div className="col-md-4 project-card-size">
-            <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" >
-              <img
-                src={require("../../images/ecommerce.jpg")}
-                
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">E-Commerce </h5>
-                <p>
-                  <span className="badge__style badge__color">React JS</span>
-                  <span className="badge__style badge__color">MongoDB</span>
-                  <span className="badge__style badge__color">
-                    Express (Node Js)
-                  </span>
-                </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "E-Commerce "
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-md-4 project-card-size">
-            <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" >
-              <img
-                src={require("../../images/ecommerce.jpg")}
-                
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">E-Commerce </h5>
-                <p>
-                  <span className="badge__style badge__color">React JS</span>
-                  <span className="badge__style badge__color">MongoDB</span>
-                  <span className="badge__style pink_badge">
-                    Express (Node Js)
-                  </span>
-                </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "E-Commerce "
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="col-md-4 project-card-size">
-            <span className="top_badge__style badge__color">MERN Stack</span>
-            <div className="card card__style" >
-              <img
-                src={require("../../images/ecommerce.jpg")}
-                
-                className="card-img-top"
-                alt="..."
-              />
-              <div className="card-body">
-                <h5 className="card-title">E-Commerce </h5>
-                <p>
-                  <span className="badge__style badge__color">React JS</span>
-                  <span className="badge__style badge__color">MongoDB</span>
-                  <span className="badge__style pink_badge">
-                    Express (Node Js)
-                  </span>
-                </p>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <div className="d-grid gap-2 col-12 mx-auto">
-                  <button
-                    className="btn btn-primary btn_color_pink"
-                    type="button"
-                    onClick={() =>
-                      handleOpenModal(
-                        require("../../images/v1.mp4"),
-                        "E-Commerce "
-                      )
-                    }
-                  >
-                    Watch Video
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          ==================three card end ================ */}
           </div>
         </div>
       </div>
@@ -323,7 +206,9 @@ const Project = () => {
           </Modal.Body> */}
           <Modal.Body className="my-0">
             <iframe
-              width="960"
+              className="w-100"
+              // style={{ height: "500px", width: "960px" }}
+              // width="960"
               height="500"
               src={videoUrl}
               title={projectName}
