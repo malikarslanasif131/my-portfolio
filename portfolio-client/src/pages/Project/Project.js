@@ -55,7 +55,9 @@ const Project = () => {
                   <h3 className="card-title">BlogBooth</h3>
                   <p className="badge-section-css">
                     <span className="badge__style badge__color">React JS</span>
-                    <span className="badge__style badge__color">Express Js</span>
+                    <span className="badge__style badge__color">
+                      Express Js
+                    </span>
                     <span className="badge__style badge__color">MongoDB</span>
                     <span className="badge__style badge__color">Bootstrap</span>
                   </p>
@@ -71,7 +73,8 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/blogbooth.mp4"),
+                          // require("../../images/blogbooth.mp4"),
+                          "https://www.youtube.com/embed/G5_yUR_tCx0?si=B16p8av8aQFAc_9H",
                           "BlogBooth",
                           "https://github.com/malikarslanasif131/mern-blogBooth"
                         )
@@ -115,7 +118,8 @@ const Project = () => {
                       type="button"
                       onClick={() =>
                         handleOpenModal(
-                          require("../../images/ecom.mp4"),
+                          // require("../../images/ecom.mp4"),
+                          "https://www.youtube.com/embed/vFVHpdiN88c?si=8SsUH0oVewu0d2mF",
                           "E-Commerce ",
                           "https://github.com/malikarslanasif131/mern-ecommerce"
                         )
@@ -311,11 +315,22 @@ const Project = () => {
           <Modal.Header closeButton>
             <Modal.Title>{projectName} Video</Modal.Title>
           </Modal.Header>
-          <Modal.Body className="my-0">
+          {/* <Modal.Body className="my-0">
             <video width="100%" height="auto" controls autoPlay={true}>
               <source src={videoUrl} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+          </Modal.Body> */}
+          <Modal.Body className="my-0">
+            <iframe
+              width="960"
+              height="500"
+              src={videoUrl}
+              title={projectName}
+              frameborder="0"
+              // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </Modal.Body>
           <Modal.Footer className="mt-0 mx-auto">
             <Link
