@@ -44,12 +44,12 @@ body {
   cursor: none;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+/* @media (min-width: 320px) and (max-width: 768px) {
   body {
-    overflow: hidden; /* Hide the scrollbar on mobile screens */
+    overflow: hidden;
   }
-}
-.scroller {
+} */
+/* .scroller {
   overflow-y: scroll;
   scrollbar-color: #0a4c95 #c2d2e4;
-}
+} */
