@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 
@@ -6,17 +6,21 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState("home_main"); // Initialize with the "Home" section ID
 
   // Define the sections and their corresponding IDs
-  const sections = [
-    { name: "Home", id: "home_main" },
-    { name: "About", id: "about_me" },
-    { name: "Service", id: "service_id" },
-    { name: "Skills", id: "skills_id" },
-    { name: "Education", id: "education_id" },
-    { name: "Projects", id: "project_id" },
-    { name: "Experience", id: "experience_id" },
-    { name: "Testimonials", id: "testimonial_id" },
-    { name: "Contact Me", id: "contact_id" },
-  ];
+  // Use useMemo to memoize the sections array
+  const sections = useMemo(
+    () => [
+      { name: "Home", id: "home_main" },
+      { name: "About", id: "about_me" },
+      { name: "Service", id: "service_id" },
+      { name: "Skills", id: "skills_id" },
+      { name: "Education", id: "education_id" },
+      { name: "Projects", id: "project_id" },
+      { name: "Experience", id: "experience_id" },
+      { name: "Testimonials", id: "testimonial_id" },
+      { name: "Contact Me", id: "contact_id" },
+    ],
+    [] // Empty dependency array as it's not dependent on any props or state
+  );
 
   const handleLinkClick = (e, targetId) => {
     e.preventDefault();
@@ -43,7 +47,6 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check the scroll position and determine the active section
       const scrollPosition = window.scrollY;
 
       for (const section of sections) {
@@ -60,34 +63,55 @@ const Navbar = () => {
         }
       }
 
-      // If no section is active, set it to null
       setActiveSection(null);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Check if the screen width is greater than a certain value (e.g., 768px for mobile screens)
+    const isMobileScreen = window.innerWidth <= 768;
+
+    // Add or remove the scroll event listener based on the screen width
+    if (!isMobileScreen) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    // Cleanup: Remove the event listener when the component is unmounted
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      if (!isMobileScreen) {
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+  }, [sections]);
+  useEffect(() => {
+    const handleSmallScreenScroll = () => {
+      const stickyElement = document.querySelector(".sticky-top-top");
+
+      const scrollOffset = window.scrollY;
+
+      // Check if scrolling down
+      if (scrollOffset > 20) {
+        stickyElement.style.top = "20px";
+      } else {
+        // Scrolling up
+        stickyElement.style.top = "0";
+      }
+    };
+
+    const isSmallScreen = window.innerWidth <= 768;
+
+    if (isSmallScreen) {
+      window.addEventListener("scroll", handleSmallScreenScroll);
+    }
+
+    return () => {
+      if (isSmallScreen) {
+        window.removeEventListener("scroll", handleSmallScreenScroll);
+      }
     };
   }, []);
-  window.onscroll = function () {
-    const stickyElement = document.querySelector(".sticky-top-top");
-
-    // Change the value based on your requirements
-    const scrollOffset = window.scrollY;
-
-    // Check if the scroll offset is greater than a certain value
-    if (scrollOffset > 20) {
-      // Apply the new top value when scrolling down
-      stickyElement.style.top = "20px";
-    } else {
-      // Reset the top value when scrolling up
-      stickyElement.style.top = "0";
-    }
-  };
 
   return (
     <>
-      <div className="sticky-top-top">
+      <div className="sticky-top-top container-fluid">
         <nav className="navbar navbar-expand-lg navbar-light sticky-top nav__style">
           <div className="container-fluid">
             <a

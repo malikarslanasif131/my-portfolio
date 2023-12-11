@@ -132,7 +132,14 @@
     border-radius: 50%;
   }
 }
-
+@media (min-width: 1170px) and (max-width: 1400px) {
+  .hide-mobile {
+    /* display: none !important; */
+  }
+  .circles {
+    height: 75vh;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
   .hide-mobile {
     display: none !important;

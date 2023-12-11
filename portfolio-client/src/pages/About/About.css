@@ -92,8 +92,9 @@
 } */
 
 .custom_width_150 {
-  width: 240px !important;
+  width: 240px;
   border-radius: 10px !important;
+  border: 1px solid #da712c;
 }
 .mern-color {
   color: #da712c;
@@ -130,6 +131,21 @@
 }
 .about-card-cards-sm {
   display: none;
+}
+
+@media (min-width: 1170px) and (max-width: 1400px) {
+  .about_details {
+    font-size: 17px;
+  }
+  .custom_width_150 {
+    width: 220px;
+  }
+  .btn-readmore {
+    font-size: 1rem !important;
+  }
+  .service-box h3 {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 768px) {

@@ -6,7 +6,7 @@
   color: #fff;
 }
 .card__style:hover {
-  transform: scale(1.01);
+  /* transform: scale(1.01); */
   box-shadow: 0 0 1rem #da712c;
 }
 .card__style-modal {
@@ -92,7 +92,7 @@ button:active {
 
 .badge__style {
   display: inline-block;
-  padding: 0.35em 0.65em;
+  padding: 0.35em 0.6em;
   font-size: 0.7em;
   font-weight: 400;
   line-height: 1;
@@ -159,11 +159,21 @@ button:active {
   height: 220px;
 }
 
+@media (min-width: 1170px) and (max-width: 1400px) {
+  .card__style {
+    width: 22rem;
+    font-size: 14px;
+  }
+  .badge__color {
+    padding: 5px 10px;
+  }
+}
+
 @media (min-width: 320px) and (max-width: 768px) {
   .card__style {
-    width: 19rem;
+    width: 22rem;
     margin: auto;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .card-img-top {

@@ -58,13 +58,13 @@ function App() {
         outerAlpha={0}
         // hasBlendMode={true}
         innerStyle={{
-          backgroundColor: "#da712c",
-          zIndex: "9999",
+          backgroundColor: "#af5113",
+          zIndex: "99999999",
           transition: "none",
         }}
         outerStyle={{
-          border: "4px solid #da712c",
-          zIndex: "9999",
+          border: "4px solid #af5113",
+          zIndex: "99999999",
           transition: "none",
         }}
       />

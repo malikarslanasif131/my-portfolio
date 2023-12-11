@@ -55,9 +55,7 @@ const Project = () => {
                   <h3 className="card-title">BlogBooth</h3>
                   <p className="badge-section-css">
                     <span className="badge__style badge__color">React JS</span>
-                    <span className="badge__style badge__color">
-                      Express Js
-                    </span>
+                    <span className="badge__style badge__color">Express Js</span>
                     <span className="badge__style badge__color">MongoDB</span>
                     <span className="badge__style badge__color">Bootstrap</span>
                   </p>
