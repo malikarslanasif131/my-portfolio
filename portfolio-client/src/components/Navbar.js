@@ -89,7 +89,7 @@ const Navbar = () => {
 
       // Check if scrolling down
       if (scrollOffset > 20) {
-        stickyElement.style.top = "20px";
+        // stickyElement.style.top = "20px";
       } else {
         // Scrolling up
         stickyElement.style.top = "0";
