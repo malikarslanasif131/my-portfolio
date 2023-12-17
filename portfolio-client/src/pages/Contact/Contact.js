@@ -118,7 +118,7 @@ const Contact = () => {
                 <div className="d-grid gap-2 col-12 mx-auto">
                   <button
                     type="submit"
-                    className="btn btn-primary btn_color_custom "
+                    className="btn  btn_color_custom "
                     onClick={handleSubmit}
                   >
                     Submit

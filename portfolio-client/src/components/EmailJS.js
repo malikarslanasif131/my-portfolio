@@ -1,28 +1,31 @@
-import React, { useRef } from "react";
+import React, { useRef, useMemo } from "react";
 import emailjs from "@emailjs/browser";
 
 export const ContactUs = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = useMemo(
+    () => (e) => {
+      e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_i4plhg7",
-        "template_u5z0i6f",
-        form.current,
-        "FenPdmumdsxkfssD8"
-      )
-      .then(
-        (result) => {
-          // console.log(result.text);
-        },
-        (error) => {
-          // console.log(error.text);
-        }
-      );
-  };
+      emailjs
+        .sendForm(
+          "service_i4plhg7",
+          "template_u5z0i6f",
+          form.current,
+          "FenPdmumdsxkfssD8"
+        )
+        .then(
+          (result) => {
+            // console.log(result.text);
+          },
+          (error) => {
+            // console.log(error.text);
+          }
+        );
+    },
+    []
+  );
 
   return (
     <form ref={form} onSubmit={sendEmail}>

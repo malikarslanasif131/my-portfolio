@@ -60,6 +60,13 @@
   color: #323946;
   font-weight: 700;
 }
+.btn_color_custom:active {
+  background: #da712c;
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem #da712c;
+  color: #323946;
+  font-weight: 700;
+}
 
 .custom__mt-7rem {
   margin-top: 7rem;

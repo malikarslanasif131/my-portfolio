@@ -1,25 +1,25 @@
 import "./App.css";
 import Layout from "./pages/Layout/Layout";
-import React, { useEffect } from "react";
+import React, { useEffect, useCallback } from "react";
 import axios from "axios";
 import { Routes, Route } from "react-router-dom";
 // import CustomCursor from "./components/CustomCursor";
 import AnimatedCursor from "react-animated-cursor";
 function App() {
-  function getCustomDateTime() {
+  const getCustomDateTime = useCallback(() => {
     const options = {
-      weekday: "long", // full day name (e.g., Monday)
-      day: "numeric", // day of the month (e.g., 30)
-      month: "long", // full month name (e.g., September)
-      hour: "numeric", // hours (e.g., 01)
-      minute: "numeric", // minutes (e.g., 30)
-      hour12: true, // use 12-hour clock format
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+      hour: "numeric",
+      minute: "numeric",
+      hour12: true,
     };
 
     const now = new Date();
     return now.toLocaleString("en-US", options);
-  }
-  const getClientInfo = async () => {
+  }, []);
+  const getClientInfo = useCallback(async () => {
     try {
       const response = await fetch("https://api.ipify.org?format=json");
       const { ip } = await response.json();
@@ -33,19 +33,17 @@ function App() {
         screenHeight: window.screen.height,
       };
 
-      // Send the client information to the server using axios
-
       await axios.post("api/saveClientInfo", browserInfo);
 
       console.log("Client information sent to the server:", browserInfo);
     } catch (error) {
       // console.error("Error fetching client information:", error);
     }
-  };
+  }, [getCustomDateTime]);
 
   useEffect(() => {
     getClientInfo();
-  }, []);
+  }, [getClientInfo]);
 
   return (
     <>
@@ -61,6 +59,7 @@ function App() {
           backgroundColor: "#af5113",
           zIndex: "99999999",
           transition: "none",
+          willChange: "transform",
         }}
         outerStyle={{
           border: "4px solid #af5113",

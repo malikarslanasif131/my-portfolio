@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import "./CirclesAnimation.css";
 
 const CirclesAnimation = () => {
@@ -20,29 +20,32 @@ const CirclesAnimation = () => {
     { id: 15, left: 30, top: 65 },
   ]);
 
-  const handleMouseDown = (event, id) => {
-    const index = circles.findIndex((circle) => circle.id === id);
-    const offsetX = event.clientX - circles[index].left;
-    const offsetY = event.clientY - circles[index].top;
+  const handleMouseDown = useMemo(
+    () => (event, id) => {
+      const index = circles.findIndex((circle) => circle.id === id);
+      const offsetX = event.clientX - circles[index].left;
+      const offsetY = event.clientY - circles[index].top;
 
-    const handleMouseMove = (event) => {
-      const updatedCircles = [...circles];
-      updatedCircles[index] = {
-        ...updatedCircles[index],
-        left: event.clientX - offsetX,
-        top: event.clientY - offsetY,
+      const handleMouseMove = (event) => {
+        const updatedCircles = [...circles];
+        updatedCircles[index] = {
+          ...updatedCircles[index],
+          left: event.clientX - offsetX,
+          top: event.clientY - offsetY,
+        };
+        setCircles(updatedCircles);
       };
-      setCircles(updatedCircles);
-    };
 
-    const handleMouseUp = () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-      window.removeEventListener("mouseup", handleMouseUp);
-    };
+      const handleMouseUp = () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+        window.removeEventListener("mouseup", handleMouseUp);
+      };
 
-    window.addEventListener("mousemove", handleMouseMove);
-    window.addEventListener("mouseup", handleMouseUp);
-  };
+      window.addEventListener("mousemove", handleMouseMove);
+      window.addEventListener("mouseup", handleMouseUp);
+    },
+    [circles]
+  );
 
   return (
     <ul className="circles">
