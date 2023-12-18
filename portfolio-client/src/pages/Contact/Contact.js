@@ -11,18 +11,26 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isSubmitting) {
+      return;
+    }
+
+    setIsSubmitting(true);
     // console.log(name, email, message);
     if (name === "" || email === "" || message === "") {
       toast.error("Please fill all the fields");
+      setIsSubmitting(false);
       return;
     }
     // Email validation using a regular expression
     const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
     if (!emailPattern.test(email)) {
       toast.error("Please enter a valid email address");
+      setIsSubmitting(false);
       return;
     }
     const Data = {
@@ -44,10 +52,12 @@ const Contact = () => {
           setEmail("");
           setMessage("");
           toast.success("Message sent successfully");
+          setIsSubmitting(false);
         },
         (error) => {
           // console.log(error.text);
           toast.error("Failed to send message");
+          setIsSubmitting(false);
         }
       );
   };
@@ -120,8 +130,17 @@ const Contact = () => {
                     type="submit"
                     className="btn  btn_color_custom "
                     onClick={handleSubmit}
+                    disabled={isSubmitting}
                   >
-                    Submit
+                    {isSubmitting ? (
+                      <div className="text-center p-0 m-0">
+                        <div className="spinner-border p-0 m-0" role="status">
+                          {/* <span className="sr-only">Loading...</span> */}
+                        </div>
+                      </div>
+                    ) : (
+                      "Submit"
+                    )}
                   </button>
                 </div>
               </form>

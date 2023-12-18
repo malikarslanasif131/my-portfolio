@@ -54,7 +54,7 @@ const Home = () => {
         id="home_main"
         className="container_fluid py-5 bg__color__white home__section"
       >
-        <div className="row mx-auto d-flex justify-content-center">
+        <div className="row mx-auto my-4 d-flex justify-content-center">
           {/* // col section 1 */}
           {/* <div className="col-md-5">
             <div className="m-auto image_round class-sm-imgdiv">
